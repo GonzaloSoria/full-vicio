@@ -1,4 +1,6 @@
 /*BASE*/
-@use './base/reset';
-@use './base/vars';
+@import './base/vars';
+@import './base/reset';
 /*COMPONENTS*/
+@import './components/navbar';
+

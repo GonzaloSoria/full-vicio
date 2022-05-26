@@ -1,9 +1,8 @@
+import Navbar from './components/Navbar'
 
 const App = () => {
   return (
-    <div className="container">
-      <h1>Hola mundo</h1>
-    </div>
+    <Navbar />
   );
 }
 

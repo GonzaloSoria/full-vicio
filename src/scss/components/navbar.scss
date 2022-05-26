@@ -1,0 +1,115 @@
+@import '../base/vars';
+
+/*ICONO MENU*/
+.header-bg {
+    background-color: $header-bg;
+}
+.lbl-menu {
+    width: 50px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    z-index: 100; 
+    .span1, .span2, .span3 {
+        position: absolute;
+        content: '';
+        width: 40px;
+        height: 3px;
+        background-color: #CCCCCC;
+        transition: all 400ms ease;
+    }
+    .span2 {
+    margin-top: 11px;
+    width: 30px;
+    }
+    .span3 {
+    margin-top: 22px;
+    width: 20px;
+    }
+}
+/*LOGO*/
+.brand {
+    width: 100px;
+}
+/*WIDGETS*/
+.bg-cart, .bg-fav {
+    padding: 5px 10px;
+    background-color: $body-bg;
+    border-radius: 15px;
+    position: relative;
+    img {
+        width: 22px;
+    }
+}
+.budget {
+    width: 25px;
+    height: 25px;
+    background-color: $primary-color;
+    color: #000000;
+    position: absolute;
+    top: -12px;
+    right: -4px;
+    border-radius: 100%;
+}
+/*MENU LATERAL*/
+.offcanvas-start {
+    border: none;
+    .menu {
+        color: $font-white;
+    }
+    .btn-close {
+        padding: 0.25em -0.75em;
+        color: #000;
+        background: transparent url('../../../public/img/close.png');
+        opacity: 1;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    nav {
+        width: 100%;
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                list-style: none;
+                font-size: $font-40;
+                color: $font-white;
+                font-weight: $fw-700;
+            }
+        }
+    }
+    .dropdown {
+        button {
+            background-color: none;
+            font-size: $font-40;
+            color: $font-white;
+            font-weight: $fw-700;
+            padding: 0;
+            img {
+                width: 20px;
+                margin-left: 20px;
+            }
+            &:focus {
+                box-shadow: none;
+                img {
+                    transform: rotate(-180deg);
+                }
+            }
+        }
+        ul {
+            background-color: $header-bg;
+            border: none;
+            li {
+                a {
+                    color: $font-white;
+                    font-size: $font-25;
+                    font-weight: $fw-700;
+                }
+            }
+        }
+    }
+}
+.dropdown-toggle::after {
+    content: none;
+}
