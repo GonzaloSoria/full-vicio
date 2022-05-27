@@ -2,6 +2,8 @@ import CartWidget from "./CartWidget";
 import FavWidget from "./FavWidget";
 
 const Navbar = () => {
+    const menu_sound = new Audio();
+    menu_sound.src = 'assets/sounds/xbarrel.wav';
 
     return (
         <>
@@ -9,7 +11,7 @@ const Navbar = () => {
             <div className="container">
                 <nav className="d-flex justify-content-between">
                     <div className="d-flex align-items-center">
-                        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" className="">
+                        <a onClick={() => menu_sound.play()} data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" className="">
                             <label className="lbl-menu">
                                 <span className="span1"></span>
                                 <span className="span2"></span>
