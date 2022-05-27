@@ -55,7 +55,8 @@
 }
 /*MENU LATERAL*/
 .offcanvas-start {
-    background-color: $body-bg;
+    //background-color: $body-bg;
+    background-image: url('../../../public/assets/img/menu-bg.jpg');
     border: none;
     .menu {
         color: $font-white;
@@ -84,7 +85,7 @@
                 font-size: $font-40;
                 color: $font-white;
                 font-weight: $fw-700;
-                border-bottom: 1px solid $secondary-color;
+                border-bottom: 1px solid #3a3a3a;
                 a:hover {
                     color: $secondary-color;
                 }

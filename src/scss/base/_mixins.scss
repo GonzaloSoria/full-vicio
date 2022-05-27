@@ -21,3 +21,23 @@
     right: -13px;
     border-radius: 100%;
 }
+
+/*SLIDE HOME*/
+@mixin slide-home() {
+    background-color: $body-bg;
+    width: 100%;
+    height: 450px !important;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*BOTONES*/
+@mixin comprar-ahora() {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: $fw-700;
+    color: $font-black;
+    background-color: $secondary-color;
+}

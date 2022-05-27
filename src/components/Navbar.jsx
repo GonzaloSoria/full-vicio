@@ -9,7 +9,7 @@ const Navbar = () => {
             <div className="container">
                 <nav className="d-flex justify-content-between">
                     <div className="d-flex align-items-center">
-                        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" className="">
                             <label className="lbl-menu">
                                 <span className="span1"></span>
                                 <span className="span2"></span>
@@ -26,6 +26,7 @@ const Navbar = () => {
                                     <ul>
                                         <li><a href="#">Home</a></li>
                                         <li><a href="#">Carrito</a></li>
+                                        <li><a href="#">Favoritos</a></li>
                                         <li><a href="#">Consolas</a></li>
                                         <li><a href="#">Categorias</a></li>
                                     </ul>
