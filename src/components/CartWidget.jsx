@@ -2,7 +2,7 @@ const CartWidget = () => {
     return (
         <>
             <div className="bg-cart">
-                <a href="#"><img src="img/cart.png" alt="" /></a>
+                <a href="#"><img src="assets/img/cart.png" alt="" /></a>
                 <div className="widget d-flex justify-content-center align-items-center">0</div>
             </div>
         </>
