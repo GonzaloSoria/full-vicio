@@ -37,7 +37,7 @@ const Navbar = () => {
                     </div>
                     <div className="d-flex justifi-content-center">
                         <form action="" className="d-flex justify-content-center align-items-center search-form">
-                            <input type="search" />
+                            <input type="search" placeholder="Buscar"/>
                             <input type="image" src="img/lupa.png" className="lupa"/>
                         </form>
                         <div className="bg-juegos mx-2">
