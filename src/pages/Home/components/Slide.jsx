@@ -40,6 +40,15 @@ export default function App() {
                         </div>
                     </div>
                 </SwiperSlide>
+                <SwiperSlide className="bg-slide-game3">
+                    <div className="d-flex flex-column justify-content-end px-3 h-100 pb-5">
+                        <h2>Assasins Creed: Valhalla</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, in.</p>
+                        <div className="d-flex">
+                            <a href="#" className="comprar-ahora">COMPRAR AHORA</a>
+                        </div>
+                    </div>
+                </SwiperSlide>
             </Swiper>
         </div>
     </>
