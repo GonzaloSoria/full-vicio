@@ -1,0 +1,23 @@
+@import './vars';
+
+/*WIDGETS*/
+@mixin bg-widget() {
+    padding: 5px 10px;
+    background-color: $body-bg;
+    border-radius: 15px;
+    position: relative;
+    img {
+        width: 15px;
+    }
+}
+
+@mixin widget() {
+    width: 25px;
+    height: 25px;
+    background-color: $secondary-color;
+    color: #000000;
+    position: absolute;
+    top: -12px;
+    right: -13px;
+    border-radius: 100%;
+}

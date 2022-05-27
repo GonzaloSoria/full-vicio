@@ -1,6 +1,9 @@
 /*BASE*/
 @import './base/vars';
 @import './base/reset';
+@import './base/mixins';
 /*COMPONENTS*/
 @import './components/navbar';
+@import './components/cart_widget';
+@import './components/fav_widget';
 

@@ -1,0 +1,7 @@
+@import '../base/vars';
+@import '../base/mixins';
+
+.bg-fav {
+    @include bg-widget();
+    margin-right: 5px;
+}

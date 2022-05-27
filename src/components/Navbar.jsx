@@ -1,12 +1,11 @@
-import { useState } from "react";
+import CartWidget from "./CartWidget";
+import FavWidget from "./FavWidget";
 
 const Navbar = () => {
-    const [favoritos, setFavoritos] = useState(0)
-    const [carrito, setCarrito] = useState(0)
 
     return (
         <>
-        <header className="container-fluid py-4 header-bg">
+        <header className="container-fluid py-4 header-bg w-100">
             <div className="container">
                 <nav className="d-flex justify-content-between">
                     <div className="d-flex align-items-center">
@@ -31,23 +30,21 @@ const Navbar = () => {
                                         <li><a href="#">Categorias</a></li>
                                     </ul>
                                 </nav>
+                                <a href="#"><h1 className="brand d-block d-md-none border-none">Fullvicio.</h1></a>
                             </div>
                         </div>
-                        <a href="#"><img src="img/full-vicio.png" alt="full vicio" className="brand"/></a>
+                        <a href="#"><h1 className="brand d-none d-md-block">Fullvicio.</h1></a>
                     </div>
                     <div className="d-flex justifi-content-center">
                         <form action="" className="d-flex justify-content-center align-items-center search-form">
                             <input type="search" />
                             <input type="image" src="img/lupa.png" className="lupa"/>
                         </form>
-                        <div className="bg-fav mx-2">
-                            <a href="#"><img src="img/favorito.png" alt="" /></a>
-                            <div className="budget d-flex justify-content-center align-items-center">{favoritos}</div>
+                        <div className="bg-juegos mx-2">
+                            <a href="#" className="juegos">Juegos</a>
                         </div>
-                        <div className="bg-cart">
-                            <a href="#"><img src="img/cart.png" alt="" /></a>
-                            <div className="budget d-flex justify-content-center align-items-center">{carrito}</div>
-                        </div>
+                        <FavWidget />
+                        <CartWidget />
                     </div>
                 </nav>
             </div>

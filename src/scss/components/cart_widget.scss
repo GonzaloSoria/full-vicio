@@ -1,0 +1,9 @@
+@import '../base/vars';
+@import '../base/mixins';
+
+.bg-cart {
+    @include bg-widget();
+    .widget {
+        @include widget();
+    }
+}
