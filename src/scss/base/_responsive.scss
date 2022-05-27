@@ -1,0 +1,7 @@
+@import './vars';
+
+@media screen and (min-width: 576px) {
+    .search-form input[type=search] {
+        width: 300px;
+    }
+}
