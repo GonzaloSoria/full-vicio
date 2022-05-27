@@ -17,7 +17,7 @@ const Navbar = () => {
                                 <span className="span3"></span>
                             </label>
                         </a>
-                        <div className="offcanvas offcanvas-start header-bg" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div className="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                             <div className="offcanvas-header">
                                 <h5 className="offcanvas-title menu" id="offcanvasExampleLabel">Menu</h5>
                                 <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -27,36 +27,19 @@ const Navbar = () => {
                                     <ul>
                                         <li><a href="#">Home</a></li>
                                         <li><a href="#">Carrito</a></li>
-                                        <li class="nav-item dropdown">
-                                            <button className="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-                                                Consolas
-                                                <img src="img/flecha-abajo.png" alt="" />
-                                            </button>
-                                            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                <li><a className="dropdown-item" href="#">PC</a></li>
-                                                <li><a className="dropdown-item" href="#">Playstation</a></li>
-                                                <li><a className="dropdown-item" href="#">Nintenso Switch</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <button className="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-                                                Categoria
-                                                <img src="img/flecha-abajo.png" alt="" />
-                                            </button>
-                                            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                <li><a className="dropdown-item" href="#">Rol</a></li>
-                                                <li><a className="dropdown-item" href="#">RPG</a></li>
-                                                <li><a className="dropdown-item" href="#">Shooter</a></li>
-                                                <li><a className="dropdown-item" href="#">Aventura</a></li>
-                                            </ul>
-                                        </li>
+                                        <li><a href="#">Consolas</a></li>
+                                        <li><a href="#">Categorias</a></li>
                                     </ul>
                                 </nav>
                             </div>
                         </div>
-                        <a href="#"><img src="img/full-vicio.png" alt="full vicio" className="brand ps-2"/></a>
+                        <a href="#"><img src="img/full-vicio.png" alt="full vicio" className="brand"/></a>
                     </div>
                     <div className="d-flex justifi-content-center">
+                        <form action="" className="d-flex justify-content-center align-items-center search-form">
+                            <input type="search" />
+                            <input type="image" src="img/lupa.png" className="lupa"/>
+                        </form>
                         <div className="bg-fav mx-2">
                             <a href="#"><img src="img/favorito.png" alt="" /></a>
                             <div className="budget d-flex justify-content-center align-items-center">{favoritos}</div>
