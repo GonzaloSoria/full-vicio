@@ -30,7 +30,7 @@
 /*LOGO*/
 .brand {
     font-size: $font-25;
-    font-weight: $fw-700;
+    font-weight: $fw-bold;
     margin-bottom: 0;
     margin-left: 10px;
     color: $font-white;
@@ -84,7 +84,7 @@
                 list-style: none;
                 font-size: $font-40;
                 color: $font-white;
-                font-weight: $fw-700;
+                font-weight: $fw-bold;
                 border-bottom: 1px solid #3a3a3a;
                 a:hover {
                     color: $secondary-color;
