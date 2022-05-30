@@ -1,8 +1,8 @@
 @import '../base/vars';
 
 /*ICONO MENU*/
-.header-bg {
-    background-color: $header-bg;
+.primary-bg {
+    background-color: $primary-bg;
 }
 .lbl-menu {
     width: 40px;
@@ -15,7 +15,7 @@
         content: '';
         width: 30px;
         height: 3px;
-        background-color: $font-gray;
+        background-color: $third-color;
         transition: all 400ms ease;
     }
     .span2 {
@@ -35,7 +35,7 @@
     margin-left: 10px;
     color: $font-white;
     padding-right: 10px;
-    border-right: 2px solid $font-gray;
+    border-right: 2px solid $third-color;
 }
 .border-none {
     border: none;
@@ -43,19 +43,19 @@
 /*WIDGETS*/
 .bg-juegos {
     padding: 5px 10px;
-    background-color: $body-bg;
+    background-color: $secondary-bg;
     border-radius: 15px;
     position: relative;
     img {
         width: 15px;
     }
     .juegos {
-        color: $font-gray;
+        color: $third-color;
     }
 }
 /*MENU LATERAL*/
 .offcanvas-start {
-    //background-color: $body-bg;
+    //background-color: $secondary-bg;
     background-image: url('../../../public/assets/img/menu-bg.jpg');
     border: none;
     .menu {
@@ -98,11 +98,11 @@
     position: relative;
     input[type="search"] {
         border: none;
-        background-color: $body-bg;
+        background-color: $secondary-bg;
         border-radius: 20px;
         padding: 3px 10px;
         outline: none;
-        color: $font-gray;
+        color: $third-color;
         width: 100px;
     }
     input[type="search"]::-webkit-search-decoration,

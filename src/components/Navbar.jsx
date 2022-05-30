@@ -7,7 +7,7 @@ const Navbar = () => {
 
     return (
         <>
-        <header className="container-fluid py-4 header-bg w-100">
+        <header className="container-fluid py-4 primary-bg w-100">
             <div className="container">
                 <nav className="d-flex justify-content-between">
                     <div className="d-flex align-items-center">
