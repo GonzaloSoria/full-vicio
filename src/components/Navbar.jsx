@@ -2,16 +2,13 @@ import CartWidget from "./CartWidget";
 import FavWidget from "./FavWidget";
 
 const Navbar = () => {
-    const menu_sound = new Audio();
-    menu_sound.src = 'assets/sounds/xbarrel.wav';
-
     return (
         <>
         <header className="container-fluid py-4 primary-bg w-100">
             <div className="container">
                 <nav className="d-flex justify-content-between">
                     <div className="d-flex align-items-center">
-                        <a onClick={() => menu_sound.play()} data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" className="">
+                        <a  data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" className="">
                             <label className="lbl-menu">
                                 <span className="span1"></span>
                                 <span className="span2"></span>
@@ -41,7 +38,7 @@ const Navbar = () => {
                     <div className="d-flex justifi-content-center">
                         <form action="" className="d-flex justify-content-center align-items-center search-form">
                             <input type="search" placeholder="Buscar"/>
-                            <input type="image" src="assets/img/lupa.png" className="lupa"/>
+                            <input type="image" src="assets/lupa.png" className="lupa"/>
                         </form>
                         <div className="bg-juegos mx-2">
                             <a href="#" className="juegos">Juegos</a>

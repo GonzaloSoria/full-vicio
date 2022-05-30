@@ -58,8 +58,7 @@ header {
 }
 /*MENU LATERAL*/
 .offcanvas-start {
-    //background-color: $secondary-bg;
-    background-image: url('../../../public/assets/img/menu-bg.jpg');
+    background-color: $secondary-bg;
     border: none;
     .menu {
         color: $font-white;
@@ -67,7 +66,7 @@ header {
     .btn-close {
         padding: 0.25em -0.75em;
         color: #000;
-        background: transparent url('../../../public/assets/img/close.png');
+        background: transparent url('../../../public/assets/close.png');
         opacity: 1;
         &:focus {
             box-shadow: none;
@@ -89,8 +88,8 @@ header {
                 color: $font-white;
                 font-weight: $fw-bold;
                 border-bottom: 1px solid #3a3a3a;
-                a:hover {
-                    color: $secondary-color;
+                a {
+                    width: 100% !important;
                 }
             }
         }
