@@ -1,4 +1,4 @@
-import Slide from "../../components/Slide";
+import Slide from "../../components/SlideHome";
 
 const Home = () => {
     return (

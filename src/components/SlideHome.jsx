@@ -4,7 +4,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination} from "swiper";
 
-export default function App() {
+const SlideHome = () => {
   return (
     <>
         <div className="container py-5 mt-5">
@@ -63,3 +63,5 @@ export default function App() {
     </>
   );
 }
+
+export default SlideHome;
