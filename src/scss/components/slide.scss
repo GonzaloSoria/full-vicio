@@ -9,6 +9,7 @@
     background-color: $primary-color !important;
 }
 .bg-slide-game1 {
+    border-radius: 20px;
     background-image: url('../../../public/assets/img/diablo-4-banner.jpg');
     @include slide-home;
     h2 {
@@ -26,6 +27,7 @@
 }
 
 .bg-slide-game2 {
+    border-radius: 20px;
     background-image: url('../../../public/assets/img/lol-banner.jpg');
     @include slide-home;
     h2 {
@@ -43,6 +45,7 @@
 }
 
 .bg-slide-game3 {
+    border-radius: 20px;
     background-image: url('../../../public/assets/img/asassins-creed-valhalla-banner.jpg');
     @include slide-home;
     h2 {
@@ -60,6 +63,7 @@
 }
 
 .bg-slide-game4 {
+    border-radius: 20px;
     background-image: url('../../../public/assets/img/elden-ring--banner.jpg');
     @include slide-home;
     h2 {

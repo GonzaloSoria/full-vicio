@@ -7,7 +7,7 @@ import { Autoplay, Pagination} from "swiper";
 export default function App() {
   return (
     <>
-        <div className="container py-4">
+        <div className="container py-5 mt-5">
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}

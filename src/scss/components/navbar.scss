@@ -1,8 +1,11 @@
 @import '../base/vars';
 
 /*ICONO MENU*/
-.primary-bg {
+header {
     background-color: $primary-bg;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 .lbl-menu {
     width: 40px;
