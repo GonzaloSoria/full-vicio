@@ -1,0 +1,31 @@
+@import '../base/vars';
+
+.categorias {
+    padding-left: 20px;
+    border-left: 4px solid $secondary-color;
+    color: $font-white;
+}
+
+.bg-rpg {
+    background-image: url('../../../public/assets/the-elder-scrolls-v_-skyrim-wallpapers-80227-144990-5785027.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #00000052;
+        z-index: -1;
+    }
+    h2 {
+        color: $font-white;
+        font-weight: $fw-bold;
+        text-align: center;
+    }
+}
