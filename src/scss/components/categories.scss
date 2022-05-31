@@ -1,4 +1,5 @@
 @import '../base/vars';
+@import '../base/mixins';
 
 .categorias {
     padding-left: 20px;
@@ -7,25 +8,26 @@
 }
 
 .bg-rpg {
-    background-image: url('../../../public/assets/the-elder-scrolls-v_-skyrim-wallpapers-80227-144990-5785027.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    z-index: 1;
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #00000052;
-        z-index: -1;
-    }
-    h2 {
-        color: $font-white;
-        font-weight: $fw-bold;
-        text-align: center;
-    }
+    background-image: url('../../../public/assets/rpg.jpg');
+    @include bg-categories;
+}
+
+.bg-strategy {
+    background-image: url('../../../public/assets/strategy.jpg');
+    @include bg-categories;
+}
+
+.bg-shooter {
+    background-image: url('../../../public/assets/shooter.jpg');
+    @include bg-categories;
+}
+
+.bg-simulator {
+    background-image: url('../../../public/assets/simulator.jpg');
+    @include bg-categories;
+}
+
+.bg-sports {
+    background-image: url('../../../public/assets/sports.jpg');
+    @include bg-categories;
 }

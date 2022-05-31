@@ -5,3 +5,12 @@
         width: 300px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .bg-rpg, .bg-strategy, .bg-shooter, .bg-simulator, .bg-sports {
+        border-radius: 0;
+        &::after {
+            border-radius: 0;
+        }
+    }
+}
