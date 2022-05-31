@@ -1,6 +1,10 @@
 @import '../base/vars';
 @import '../base/mixins';
 
+.mt-80 {
+    margin-top: 80px;
+}
+
 .swiper-pagination-bullet {
     background-color: $third-bg !important;
     opacity: 1 !important;

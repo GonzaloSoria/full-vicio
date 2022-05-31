@@ -7,7 +7,7 @@ import { Autoplay, Pagination} from "swiper";
 const SlideHome = () => {
   return (
     <>
-        <div className="container py-5 mt-5">
+        <div className="container py-5 mt-80">
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
