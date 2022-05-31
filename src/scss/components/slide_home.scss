@@ -9,72 +9,32 @@
     background-color: $primary-color !important;
 }
 .bg-slide-game1 {
-    border-radius: 20px;
     background-image: url('../../../public/assets/diablo-4-banner.jpg');
     @include slide-home;
-    h2 {
-        font-size: $title-size;
-        font-weight: $fw-bold;
-        color: $font-white;
-    }
-    p {
-        font-size: $paragraph-size;
-        color: $font-white;
-    }
     .comprar-ahora {
         @include comprar-ahora;
     }
 }
 
 .bg-slide-game2 {
-    border-radius: 20px;
     background-image: url('../../../public/assets/lol-banner.jpg');
     @include slide-home;
-    h2 {
-        font-size: $title-size;
-        font-weight: $fw-bold;
-        color: $font-white;
-    }
-    p {
-        font-size: $paragraph-size;
-        color: $font-white;
-    }
     .comprar-ahora {
         @include comprar-ahora;
     }
 }
 
 .bg-slide-game3 {
-    border-radius: 20px;
     background-image: url('../../../public/assets/asassins-creed-valhalla-banner.jpg');
     @include slide-home;
-    h2 {
-        font-size: $title-size;
-        font-weight: $fw-bold;
-        color: $font-white;
-    }
-    p {
-        font-size: $paragraph-size;
-        color: $font-white;
-    }
     .comprar-ahora {
         @include comprar-ahora;
     }
 }
 
 .bg-slide-game4 {
-    border-radius: 20px;
     background-image: url('../../../public/assets/elden-ring--banner.jpg');
     @include slide-home;
-    h2 {
-        font-size: $title-size;
-        font-weight: $fw-bold;
-        color: $font-white;
-    }
-    p {
-        font-size: $paragraph-size;
-        color: $font-white;
-    }
     .comprar-ahora {
         @include comprar-ahora;
     }
