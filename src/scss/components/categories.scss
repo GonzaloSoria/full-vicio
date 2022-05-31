@@ -31,3 +31,8 @@
     background-image: url('../../../public/assets/sports.jpg');
     @include bg-categories;
 }
+
+.bg-royal {
+    background-image: url('../../../public/assets/royal.jpg');
+    @include bg-categories;
+}
