@@ -8,14 +8,17 @@ const ItemCount = ({stock}) => {
     };
 
     const rest = () => {
-        count == 1 ? alert('Cantidad vacia') : setCount(count - 1);
+        count == 0 ? alert('No tiene productos') : setCount(count - 1);
     };
 
     return (
         <>
-         <button onClick={rest}>-</button>
-         <p style={{color: '#fff'}}>{count}</p>
-         <button onClick={add}>+</button>
+            <div className="container d-flex justify-content-center align-items-center counter-container py-5">
+                <button onClick={rest} type="button" className="btn btn-warning rest">-</button>
+                <p>{count}</p>
+                <button onClick={add} type="button" className="btn btn-warning add">+</button>
+            </div>
+         
         </>
     )
 }

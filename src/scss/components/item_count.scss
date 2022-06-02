@@ -1,0 +1,41 @@
+@import '../base/vars';
+
+.counter-container {
+    p {
+        width: 200px;
+        margin-bottom: 0;
+        padding-top: 7px;
+        color: $font-white;
+        text-align: center;
+        background-color: $first-color-bg;
+        height: 40px;
+    }
+    .rest {
+        border-radius: 0;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        font-weight: $fw-bold;
+        font-size: 10px;
+        width: 60px;
+        height: 40px;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .add {
+        border-radius: 0;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        font-weight: $fw-bold;
+        font-size: 10px;
+        width: 60px;
+        height: 40px;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+.btn:focus {
+    box-shadow: none;
+}
