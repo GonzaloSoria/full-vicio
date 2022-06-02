@@ -1,6 +1,6 @@
 import ItemCount from "../../components/ItemCount";
 
-const ItemListcontainer = ({greeting}) => {
+const ItemListcontainer = () => {
     return (
         <>
             <ItemCount stock={5}/>

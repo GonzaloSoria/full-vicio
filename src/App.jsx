@@ -7,7 +7,7 @@ const App = () => {
     <>
       <Navbar />
       <Home />
-      <ItemListcontainer greeting={'Sitio web en construccion'}/>
+      <ItemListcontainer />
     </>
   );
 }
