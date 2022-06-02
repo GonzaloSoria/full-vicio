@@ -2,7 +2,7 @@
 
 /*ICONO MENU*/
 header {
-    background-color: $primary-bg;
+    background-color: $first-color-bg;
     position: fixed;
     top: 0;
     z-index: 2;
@@ -46,7 +46,7 @@ header {
 /*WIDGETS*/
 .bg-juegos {
     padding: 5px 10px;
-    background-color: $secondary-bg;
+    background-color: $second-color-bg;
     border-radius: 15px;
     position: relative;
     img {
@@ -58,7 +58,7 @@ header {
 }
 /*MENU LATERAL*/
 .offcanvas-start {
-    background-color: $secondary-bg;
+    background-color: $second-color-bg;
     border: none;
     .menu {
         color: $font-white;
@@ -100,7 +100,7 @@ header {
     position: relative;
     input[type="search"] {
         border: none;
-        background-color: $secondary-bg;
+        background-color: $second-color-bg;
         border-radius: 20px;
         padding: 3px 10px;
         outline: none;

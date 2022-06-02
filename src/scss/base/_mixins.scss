@@ -3,7 +3,7 @@
 /*WIDGETS*/
 @mixin bg-widget() {
     padding: 5px 10px;
-    background-color: $secondary-bg;
+    background-color: $second-color-bg;
     border-radius: 15px;
     position: relative;
     img {
@@ -14,7 +14,7 @@
 @mixin widget() {
     width: 25px;
     height: 25px;
-    background-color: $secondary-color;
+    background-color: $second-color;
     color: #000000;
     position: absolute;
     top: -12px;
@@ -25,7 +25,7 @@
 /*SLIDE HOME*/
 @mixin slide-home() {
     border-radius: 20px;
-    background-color: $secondary-bg;
+    background-color: $second-color-bg;
     width: 100%;
     height: 450px !important;
     border-radius: 20px;
@@ -48,9 +48,9 @@
     padding: 10px 20px;
     border-radius: 20px;
     font-weight: $fw-bold;
-    font-size: $button-size;
+    font-size: $button-font-size;
     color: $font-black;
-    background-color: $secondary-color;
+    background-color: $second-color;
     width: 100%;
     text-align: center;
 }
