@@ -3,7 +3,7 @@ export const data = [{
     description: 'he Elder Scrolls V: Skyrim is an action role-playing video game developed by Bethesda Game Studios and published by Bethesda Softworks.',
     price: 500,
     image: 'assets/games/skyrim.jpg',
-    popular: true,
+    popular: 'yes',
     id: 1
 },{
     title: 'FARCRY 6',
