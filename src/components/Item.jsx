@@ -1,21 +1,24 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { data } from '../database/database';
 
 const Item = () => {
     const [products, setProducts] = useState([]);
 
     const get_data = () => {
-        return new Promise ((resolve, reject) => {
-            resolve(data);
+        return new Promise ((resolve) => {
+            setTimeout(() => {
+                resolve(data);
+            }, 2000)
         });
     };
 
-    get_data()
-    .then((resp) => {
-        setProducts(resp);
-        throw new Error('error')
-    })
-    .catch((err) => console.log(err))
+    useEffect(() => {
+        get_data()
+        .then((resp) => {
+            setProducts(resp);
+        })
+        .catch((err) => console.log(err))
+    }, [])
         
 
     return (
