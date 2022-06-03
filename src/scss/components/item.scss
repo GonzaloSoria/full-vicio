@@ -1,0 +1,13 @@
+@import '../base/vars';
+
+.item {
+    text-align: center;
+    img {
+        border-radius: 10px;
+    }
+    h2 {
+        color: $font-white;
+        font-size: 18px;
+        text-align: left;
+    }
+}
