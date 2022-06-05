@@ -9,21 +9,6 @@ const ItemListcontainer = () => {
     const [cart, setCart] = useState(null);
     let stock = 5;
 
-    useEffect(() => {
-        const get_data = () => {
-            return new Promise ((resolve) => {
-                setTimeout(() => {
-                    resolve(data);
-                }, 2000)
-            });
-        };
-        get_data()
-        .then((resp) => {
-            setProducts(resp);
-        })
-        .catch((err) => console.log(err))
-    }, [])
-
     const handleAdd = () => {
         count == stock ? alert('No hay mas stock') : setCount(count + 1);
         console.log(count);
@@ -38,6 +23,21 @@ const ItemListcontainer = () => {
         setCart(count);
         console.log(cart);
     };
+
+    useEffect(() => {
+        const get_data = () => {
+            return new Promise ((resolve) => {
+                setTimeout(() => {
+                    resolve(data);
+                }, 2000)
+            });
+        };
+        get_data()
+        .then((resp) => {
+            setProducts(resp);
+        })
+        .catch((err) => console.log(err))
+    }, [])
 
     return (
         <>
