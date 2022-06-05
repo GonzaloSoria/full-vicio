@@ -39,3 +39,20 @@
 .btn:focus {
     box-shadow: none;
 }
+
+.añadir-carrito {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: $fw-bold;
+    font-size: $button-font-size;
+    color: $font-black;
+    background-color: $second-color;
+    width: 100%;
+    max-width: 317px;
+    text-align: center;
+    border: none;
+}
+
+.stock {
+    color: $third-color;
+}
