@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const ItemCount = ({stock}) => {
     const [count, setCount] = useState(1)

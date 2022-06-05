@@ -1,11 +1,22 @@
 import Item from "./Item";
 
-const ItemList = () => {
+const ItemList = ({products}) => {
     return (
         <>
             <h2 className="categorias mb-5">Todos los juegos</h2>
             <div className="row">
-                <Item />
+                {
+                    products.map((product) => {
+                        return (
+                            <Item 
+                                key={product.id} 
+                                title={product.title} 
+                                image={product.image}
+                                price={product.price}
+                            />
+                        )
+                    })
+                }
             </div>
         </>
     );
