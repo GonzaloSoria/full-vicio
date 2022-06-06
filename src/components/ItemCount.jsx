@@ -1,7 +1,7 @@
 const ItemCount = ({stock, add, rest, addCart, count, cart}) => {
     return (
         <>
-            <div className="container pt-5">
+            <div className="container pt-5 text-center">
                 <p className="stock mb-0">Stock: {stock}</p>
             </div>
             <div className="container d-flex justify-content-center align-items-center counter-container py-3">
@@ -11,7 +11,7 @@ const ItemCount = ({stock, add, rest, addCart, count, cart}) => {
             </div>
             <div className="container text-center">
                 <button className="añadir-carrito" onClick={addCart}>AÑADIR AL CARRITO</button>
-                <p style={{color: '#fff'}}>Tienes {cart} productos en tu carrito</p>
+                <p style={{color: '#fff', marginTop: '10px'}}>Tienes {cart} productos en tu carrito</p>
             </div>
         </>
     );
