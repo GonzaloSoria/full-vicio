@@ -1,0 +1,31 @@
+@import '../base/vars';
+
+.container-banner {
+    background-image: url('../../../public/assets/bg-image-21.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    border-radius: 20px;
+    //overflow: hidden;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #00000095;
+        z-index: -1;
+        border-radius: 20px;
+    }
+    h2 {
+        font-size: $subtitle-size;
+        color: $font-white;
+    }
+    p {
+        font-size: $paragraph-size;
+        color: $third-color;
+    }
+}

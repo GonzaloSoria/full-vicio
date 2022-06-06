@@ -14,6 +14,29 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .container-banner {
+        border-radius: 40px;
+        margin-top: 150px !important;
+        //overflow: hidden;
+        &::after {
+            content: "";
+            border-radius: 40px;
+        }
+        h2 {
+            font-size: 45px;
+            color: $font-white;
+        }
+        p {
+            font-size: 20px;
+            color: $third-color;
+        }
+        img {
+            margin-top: -115px;
+        }
+    }
+}
+
 @media screen and (min-width: 992px) {
     .bg-rpg, .bg-strategy, .bg-shooter, .bg-simulator, .bg-sports, .bg-royal {
         border-radius: 0;
