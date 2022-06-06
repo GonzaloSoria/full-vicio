@@ -1,12 +1,12 @@
 import Categories from "../../components/Categories";
-import Populars from "../../components/Populars";
+import PopularItems from "../../components/PopularItems";
 import Slide from "../../components/SlideHome";
 
 const Home = () => {
     return (
         <>
             <Slide />
-            <Populars />
+            <PopularItems />
             <Categories />
         </>
     )

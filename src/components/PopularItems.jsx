@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { data } from '../database/database';
 import Item from './Item';
 
-const Populars = () => {
+const PopularItems = () => {
     const [popular_games, setPopularGames] = useState([]);
 
     useEffect(() => {
@@ -15,7 +15,7 @@ const Populars = () => {
         };
         get_data()
         .then((resp) => {
-            const populars = resp.filter((popular_games) => popular_games.popular == true)
+            const populars = resp.filter((popular_games) => popular_games.popular === true)
             setPopularGames(populars);
         })
         .catch((err) => console.log(err))
@@ -44,4 +44,4 @@ const Populars = () => {
     );
 };
 
-export default Populars;
+export default PopularItems;
