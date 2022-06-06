@@ -1,5 +1,7 @@
 @import './vars';
 
+
+
 @media screen and (min-width: 450px) {
     .comprar-ahora {
         width: 200px !important;
@@ -17,6 +19,15 @@
         border-radius: 0;
         &::after {
             border-radius: 0;
+        }
+    }
+    .bg-slide-game1, .bg-slide-game2, .bg-slide-game3, .bg-slide-game4 {
+        padding: 0 400px 0 20px;
+        h2 {
+            font-size: 60px;
+        }
+        p {
+            font-size: 25px;
         }
     }
 }
