@@ -5,9 +5,9 @@ import ItemList from "./ItemList";
 
 const ItemListcontainer = () => {
     const [products, setProducts] = useState([]);
-    const [count, setCount] = useState(1)
+    const [count, setCount] = useState(1);
     const [cart, setCart] = useState(0);
-    let stock = 5;
+    const [stock, setStock] = useState(5);
 
     const handleAdd = () => {
         count == stock ? alert('No hay mas stock') : setCount(count + 1);
@@ -18,7 +18,13 @@ const ItemListcontainer = () => {
     };
 
     const handleCart = () => {
-        cart == stock ? alert('No hay mas stock para agregar') : setCart(cart + count)
+        if((count + cart) > stock) {
+            alert('No hay mas stock para agregar');
+        }else if(cart == stock) {
+            alert('No hay mas stock para agregar');
+        } else {
+            setCart(cart + count);
+        }
     };
 
     useEffect(() => {
