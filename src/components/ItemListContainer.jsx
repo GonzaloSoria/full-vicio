@@ -7,7 +7,7 @@ const ItemListcontainer = () => {
     const [products, setProducts] = useState([]);
     const [count, setCount] = useState(1);
     const [cart, setCart] = useState(0);
-    const [stock, setStock] = useState(5);
+    let stock = 5;
 
     const handleAdd = () => {
         count == stock ? alert('No hay mas stock') : setCount(count + 1);
