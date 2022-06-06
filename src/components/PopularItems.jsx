@@ -15,7 +15,7 @@ const PopularItems = () => {
         };
         get_data()
         .then((resp) => {
-            const populars = resp.filter((popular_games) => popular_games.popular === true)
+            const populars = resp.filter(popular_game => popular_game.popular === true)
             setPopularGames(populars);
         })
         .catch((err) => console.log(err))
