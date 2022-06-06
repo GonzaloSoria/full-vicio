@@ -18,13 +18,7 @@ const ItemListcontainer = () => {
     };
 
     const handleCart = () => {
-        if((count + cart) > stock) {
-            alert('No hay mas stock para agregar');
-        }else if(cart == stock) {
-            alert('No hay mas stock para agregar');
-        } else {
-            setCart(cart + count);
-        }
+        (count + cart) > stock || cart == stock ?  alert('No hay mas stock para agregar') : setCart(cart + count);
     };
 
     useEffect(() => {
