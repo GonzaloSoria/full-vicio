@@ -19,7 +19,7 @@ const Populars = () => {
             setPopularGames(populars);
         })
         .catch((err) => console.log(err))
-    }, []);
+    }, [popular_games]);
 
     return (
         <>
