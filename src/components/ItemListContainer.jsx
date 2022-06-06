@@ -19,7 +19,7 @@ const ItemListcontainer = () => {
 
     const handleCart = () => {
         setCart(count)
-        console.log(cart);
+        alert(`Añadiste ${cart} productos a tu carrito`)
     };
 
     useEffect(() => {
