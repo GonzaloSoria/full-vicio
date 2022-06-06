@@ -27,7 +27,7 @@ const Navbar = () => {
                                             <li><a href="#">Carrito</a></li>
                                             <li><a href="#">Favoritos</a></li>
                                             <li><a href="#">Consolas</a></li>
-                                            <li><a href="#">Categorias</a></li>
+                                            <li><a href="#">subtitles</a></li>
                                         </ul>
                                     </nav>
                                     <a href="#"><h1 className="brand d-block d-md-none border-none">Fullvicio.</h1></a>
