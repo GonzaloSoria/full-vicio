@@ -18,8 +18,7 @@ const ItemListcontainer = () => {
     };
 
     const handleCart = () => {
-        setCart(count)
-        alert(`Añadiste ${cart} productos a tu carrito`)
+        setCart(cart + count)
     };
 
     useEffect(() => {
@@ -47,6 +46,7 @@ const ItemListcontainer = () => {
                     rest={handleRest} 
                     addCart={handleCart} 
                     count={count} 
+                    cart={cart}
                 />
             </div>
         </>

@@ -1,4 +1,4 @@
-const ItemCount = ({stock, add, rest, addCart, count}) => {
+const ItemCount = ({stock, add, rest, addCart, count, cart}) => {
     return (
         <>
             <div className="container pt-5">
@@ -11,6 +11,7 @@ const ItemCount = ({stock, add, rest, addCart, count}) => {
             </div>
             <div className="container text-center">
                 <button className="añadir-carrito" onClick={addCart}>AÑADIR AL CARRITO</button>
+                <p style={{color: '#fff'}}>Tienes {cart} productos en tu carrito</p>
             </div>
         </>
     );
