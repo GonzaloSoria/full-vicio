@@ -6,21 +6,19 @@ import ItemList from "./ItemList";
 const ItemListcontainer = () => {
     const [products, setProducts] = useState([]);
     const [count, setCount] = useState(1)
-    const [cart, setCart] = useState(null);
+    const [cart, setCart] = useState(0);
     let stock = 5;
 
     const handleAdd = () => {
         count == stock ? alert('No hay mas stock') : setCount(count + 1);
-        console.log(count);
     };
 
     const handleRest = () => {
         count == 0 ? alert('No tiene productos') : setCount(count - 1);
-        console.log(count);
     };
 
     const handleCart = () => {
-        setCart(count);
+        setCart(count)
         console.log(cart);
     };
 
