@@ -6,7 +6,7 @@ const Navbar = () => {
     const open_menu = new Audio();
 
     link.src = 'assets/sounds/link-nav.wav';
-    open_menu.src = 'assets/sounds/hover-icon-menu.wav';
+    open_menu.src = 'assets/sounds/open_menu.wav';
 
     return (
         <>
