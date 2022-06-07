@@ -10,7 +10,7 @@ const ItemListcontainer = () => {
     let stock = 5;
 
     const add_cart = new Audio();
-    add_cart.src = 'assets/sounds/add_cart.mp3';
+    add_cart.src = 'assets/sounds/add_cart.wav';
 
     const handleAdd = () => {
         count == stock ? alert('No hay mas stock') : setCount(count + 1);
@@ -27,7 +27,6 @@ const ItemListcontainer = () => {
             add_cart.play()
             setCart(cart + count);
         }
-        //(count + cart) > stock ? alert('No hay mas stock para agregar') : (setCart(cart + count), add_cart.play());
     };
 
     useEffect(() => {
