@@ -23,22 +23,24 @@ const PopularItems = () => {
 
     return (
         <>
-            <div className="container">
-                <h2 className="subtitles mb-4">Más populares</h2>
-                <img src="assets/download.png" alt="" className="img-fluid mb-4"/>
-                <div className="row">
-                    {
-                        popular_games.map((product) => {
-                            return (
-                                <Item 
-                                    key={product.id} 
-                                    title={product.title} 
-                                    image={product.image}
-                                    price={product.price}
-                                />
-                            )
-                        })
-                    } 
+            <div className="container-fluid">
+                <div className="container">
+                    <h2 className="subtitles mb-1">Más populares</h2>
+                    <img src="assets/download.png" alt="" className="img-fluid mb-4"/>
+                    <div className="row">
+                        {
+                            popular_games.map((product) => {
+                                return (
+                                    <Item 
+                                        key={product.id} 
+                                        title={product.title} 
+                                        image={product.image}
+                                        price={product.price}
+                                    />
+                                )
+                            })
+                        } 
+                    </div>
                 </div>
             </div>
         </>

@@ -46,16 +46,18 @@ const ItemListcontainer = () => {
 
     return (
         <>
-            <div className="container py-5">
-                <ItemList products={products}/>
-                <ItemCount 
-                    stock={stock}
-                    add={handleAdd} 
-                    rest={handleRest} 
-                    addCart={handleCart} 
-                    count={count} 
-                    cart={cart}
-                />
+            <div className="container-fluid">
+                <div className="container py-5">
+                    <ItemList products={products}/>
+                    <ItemCount 
+                        stock={stock}
+                        add={handleAdd} 
+                        rest={handleRest} 
+                        addCart={handleCart} 
+                        count={count} 
+                        cart={cart}
+                    />
+                </div>
             </div>
         </>
     )
