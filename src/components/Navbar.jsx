@@ -8,8 +8,7 @@ const Navbar = () => {
 
 
     link.src = 'assets/sounds/link-nav.wav';
-    hover_menu.src = 'assets/sounds/hover-icon-menu.wav';
-    open_menu.src = 'assets/sounds/open-menu.ogg';
+    open_menu.src = 'assets/sounds/hover-icon-menu.wav';
 
 
     return (
@@ -18,7 +17,7 @@ const Navbar = () => {
                 <div className="container">
                     <nav className="d-flex justify-content-between">
                         <div className="d-flex align-items-center">
-                            <a onMouseOver={() => hover_menu.play()} onClick={() => open_menu.play()} data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" className="">
+                            <a onClick={() => open_menu.play()} data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" className="">
                                 <label className="lbl-menu">
                                     <span className="span1"></span>
                                     <span className="span2"></span>
@@ -28,7 +27,7 @@ const Navbar = () => {
                             <div className="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                                 <div className="offcanvas-header">
                                     <h5 className="offcanvas-title menu" id="offcanvasExampleLabel">Menu</h5>
-                                    <button onMouseOver={() => hover_menu.play()} onClick={() => open_menu.play()} type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    <button onClick={() => open_menu.play()} type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
                                 <div className="offcanvas-body">
                                     <nav className="nav">
