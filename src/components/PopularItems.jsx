@@ -24,7 +24,7 @@ const PopularItems = () => {
     return (
         <>
             <div className="container">
-                <h2 className="subtitles mb-5">Más populares</h2>
+                <h2 className="subtitles mb-4">Más populares</h2>
                 <div className="row">
                     {
                         popular_games.map((product) => {
