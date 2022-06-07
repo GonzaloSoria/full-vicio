@@ -1,4 +1,6 @@
 const ItemCount = ({stock, add, rest, addCart, count, cart}) => {
+    
+
     return (
         <>
             <div className="container pt-5 text-center">
