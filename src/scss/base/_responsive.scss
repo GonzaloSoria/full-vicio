@@ -44,6 +44,9 @@
     }
     .bg-slide-game1, .bg-slide-game2, .bg-slide-game3, .bg-slide-game4 {
         padding: 0 400px 0 20px;
+        img {
+            width: 300px;
+        }
         h2 {
             font-size: 60px;
         }

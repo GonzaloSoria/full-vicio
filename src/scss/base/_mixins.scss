@@ -32,6 +32,9 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    img {
+        width: 200px;
+    }
     h2 {
         font-size: $title-size;
         font-weight: $fw-bold;

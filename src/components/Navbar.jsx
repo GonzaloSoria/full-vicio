@@ -8,7 +8,6 @@ const Navbar = () => {
     link.src = 'assets/sounds/link-nav.wav';
     open_menu.src = 'assets/sounds/hover-icon-menu.wav';
 
-
     return (
         <>
             <header className="container-fluid py-4 primary-bg w-100">
