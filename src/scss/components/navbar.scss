@@ -88,8 +88,15 @@ header {
                 color: $font-white;
                 font-weight: $fw-bold;
                 border-bottom: 1px solid #3a3a3a;
+                img {
+                    visibility: hidden;
+                    width: 100px;
+                }
                 a:hover {
                     color: $second-color;
+                }
+                a:hover img {
+                    visibility: visible;
                 }
             }
         }

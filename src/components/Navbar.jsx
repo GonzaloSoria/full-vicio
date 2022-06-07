@@ -2,6 +2,9 @@ import CartWidget from "./CartWidget";
 import FavWidget from "./FavWidget";
 
 const Navbar = () => {
+    const link = new Audio();
+    link.src = 'assets/link-nav.wav';
+
     return (
         <>
             <header className="container-fluid py-4 primary-bg w-100">
@@ -23,11 +26,11 @@ const Navbar = () => {
                                 <div className="offcanvas-body">
                                     <nav className="nav">
                                         <ul>
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">Carrito</a></li>
-                                            <li><a href="#">Favoritos</a></li>
-                                            <li><a href="#">Consolas</a></li>
-                                            <li><a href="#">subtitles</a></li>
+                                            <li className="d-flex align-items-center"><a onMouseOver={() => link.play()} href="#">Home<img src="assets/download.png" alt="" className="mb-0 ps-3"/></a></li>
+                                            <li><a onMouseOver={() => link.play()} href="#">Carrito<img src="assets/download.png" alt="" className="mb-0 ps-3"/></a></li>
+                                            <li><a onMouseOver={() => link.play()} href="#">Favoritos<img src="assets/download.png" alt="" className="mb-0 ps-3"/></a></li>
+                                            <li><a onMouseOver={() => link.play()} href="#">Consolas<img src="assets/download.png" alt="" className="mb-0 ps-3"/></a></li>
+                                            <li><a onMouseOver={() => link.play()} href="#">Categorías<img src="assets/download.png" alt="" className="mb-0 ps-3"/></a></li>
                                         </ul>
                                     </nav>
                                     <a href="#"><h1 className="brand d-block d-md-none border-none">Fullvicio.</h1></a>
