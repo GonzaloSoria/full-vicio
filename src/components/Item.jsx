@@ -1,6 +1,6 @@
 const Item = ({title, image, price}) => {
     const choose_game = new Audio();
-    choose_game.src = 'assets/choose_game.ogg';
+    choose_game.src = 'assets/sounds/choose_game.ogg';
 
     return (
         <>
