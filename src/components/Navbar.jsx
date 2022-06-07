@@ -4,8 +4,6 @@ import FavWidget from "./FavWidget";
 const Navbar = () => {
     const link = new Audio();
     const open_menu = new Audio();
-    const hover_menu = new Audio();
-
 
     link.src = 'assets/sounds/link-nav.wav';
     open_menu.src = 'assets/sounds/hover-icon-menu.wav';
