@@ -25,6 +25,7 @@ const PopularItems = () => {
         <>
             <div className="container">
                 <h2 className="subtitles mb-4">Más populares</h2>
+                <img src="assets/download.png" alt="" className="img-fluid mb-4"/>
                 <div className="row">
                     {
                         popular_games.map((product) => {
