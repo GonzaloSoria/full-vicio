@@ -27,13 +27,13 @@ const PopularItems = () => {
                     <img src="assets/download.png" alt="" className="img-fluid mb-4"/>
                     <div className="row">
                         {
-                            popular_games.map((product) => {
+                            popular_games.map((popular_game) => {
                                 return (
                                     <Item 
-                                        key={product.id} 
-                                        title={product.title} 
-                                        image={product.image}
-                                        price={product.price}
+                                        key={popular_game.id} 
+                                        title={popular_game.title} 
+                                        image={popular_game.image}
+                                        price={popular_game.price}
                                     />
                                 )
                             })
