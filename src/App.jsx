@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar'
-import Home from './pages/Home/Home';
+import Home from './pages/Home';
 import ItemListcontainer from './components/ItemListContainer';
 
 
