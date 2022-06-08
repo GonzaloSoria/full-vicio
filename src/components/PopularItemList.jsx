@@ -1,18 +1,16 @@
 import Item from "./Item";
 
-const PopularItemList = ({popular_games}) => {
-    const popular_game = popular_games.filter(game => game.popular == true);
-
+const PopularItemList = ({popular_game}) => {
     return (
         <>
             {
-                popular_game.map((popular_game) => {
+                popular_game.map((game) => {
                     return (
                         <Item 
-                            key={popular_game.id} 
-                            title={popular_game.title} 
-                            image={popular_game.image}
-                            price={popular_game.price}
+                            key={game.id} 
+                            title={game.title} 
+                            image={game.image}
+                            price={game.price}
                         />
                     )
                 })
