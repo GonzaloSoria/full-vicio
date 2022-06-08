@@ -9,7 +9,7 @@ const BannerHome = () => {
                         <p className="text-center mb-5 mb-md-4">Encontrá los juegos que mas te gusten en las diferentes categorias</p>
                     </div>
                     <div className="col-12 col-md-6 bg-gris px-0 text-center">
-                        <img src="assets/banner-caracters.png" alt="" className="img-fluid text-end d-none d-md-block"/>
+                        <img src="assets/banner-caracters.png" alt="" className="img-fluid d-none d-md-block"/>
                     </div>
                 </div>
             </div>
