@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { get_data } from '../helpers/getData';
+import { get_data } from '../helpers/get_data';
 import PopularItemList from '../components/PopularItemList';
 
 const PopularItemListContainer = () => {

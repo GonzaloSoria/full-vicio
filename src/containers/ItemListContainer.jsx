@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { get_data } from '../helpers/getData';
+import { get_data } from '../helpers/get_data';
 import ItemCount from "../components/ItemCount";
 import ItemList from "../components/ItemList";
 
