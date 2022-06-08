@@ -1,13 +1,13 @@
 import BannerHome from "../components/BannerHome";
 import Categories from "../components/Categories";
-import PopularItems from "../components/PopularItems";
 import Slide from "../components/SlideHome";
+import PopularItemListContainer from "../containers/PopularItemListContainer";
 
 const Home = () => {
     return (
         <>
             <Slide />
-            <PopularItems />
+            <PopularItemListContainer />
             <BannerHome />
             <Categories />
         </>

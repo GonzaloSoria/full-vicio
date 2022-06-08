@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import ItemCount from "./ItemCount";
-import ItemList from "./ItemList";
+import ItemCount from "../components/ItemCount";
+import ItemList from "../components/ItemList";
 
 const ItemListcontainer = () => {
     const [products, setProducts] = useState([]);
@@ -46,15 +46,19 @@ const ItemListcontainer = () => {
         <>
             <div className="container-fluid">
                 <div className="container py-5">
-                    <ItemList products={products}/>
-                    <ItemCount 
-                        stock={stock}
-                        handleAdd={handleAdd} 
-                        handleRest={handleRest} 
-                        handleCart={handleCart} 
-                        count={count} 
-                        cart={cart}
-                    />
+                    <h2 className="subtitles mb-1">Todos los juegos</h2>
+                    <img src="assets/download.png" alt="" className="img-fluid mb-4"/>
+                    <div className="row">
+                        <ItemList products={products}/>
+                        <ItemCount 
+                            stock={stock}
+                            handleAdd={handleAdd} 
+                            handleRest={handleRest} 
+                            handleCart={handleCart} 
+                            count={count} 
+                            cart={cart}
+                        />
+                    </div>
                 </div>
             </div>
         </>
