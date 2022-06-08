@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { get_data } from '../helpers/getData';
 import ItemCount from "../components/ItemCount";
 import ItemList from "../components/ItemList";
 
@@ -30,18 +31,18 @@ const ItemListcontainer = () => {
         };
     };
 
-    const get_data = async () => {
-        const data = await fetch('database/DATABASE.json');
-        try {
-            const data_parsed = await data.json();
-            setProducts(data_parsed)
-        } catch (error) {
-            console.log(error);
-        };
-    };
+    // const get_data = async () => {
+    //     const data = await fetch('database/DATABASE.json');
+    //     try {
+    //         const data_parsed = await data.json();
+    //         setProducts(data_parsed)
+    //     } catch (error) {
+    //         console.log(error);
+    //     };
+    // };
 
     useEffect(() => {
-        get_data()
+        get_data(setProducts)
     }, []);
 
     return (

@@ -1,22 +1,12 @@
 import { useState, useEffect } from "react";
+import { get_data } from '../helpers/getData';
 import PopularItemList from '../components/PopularItemList';
 
 const PopularItemListContainer = () => {
     const [popular_games, setPopularGames] = useState([]);
 
-    const get_data = async () => {
-        const data = await fetch('database/DATABASE.json');
-        try {
-            const data_parsed = await data.json();
-            const populars = data_parsed.filter(popular_game => popular_game.popular === true)
-            setPopularGames(populars);
-        } catch (error) {
-            console.log(error);
-        };
-    };
-
     useEffect(() => {
-        get_data()
+        get_data(setPopularGames)
     }, []);
 
     return (
