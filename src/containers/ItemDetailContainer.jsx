@@ -3,7 +3,7 @@ import { get_data } from "../helpers/get_data";
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState({})
-    const product_detail = product.find(product_details => product_details == "1");
+    const product_detail = product.find(product => product.id === "1");
 
     useEffect(() => {
       get_data(setProduct);
@@ -11,7 +11,7 @@ const ItemDetailContainer = () => {
     
     return (
         <>
-            {console.log(product_detail)}
+            <p>{product_detail.title}</p>
         </>
     )
 }
