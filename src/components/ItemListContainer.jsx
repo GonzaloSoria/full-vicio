@@ -49,9 +49,9 @@ const ItemListcontainer = () => {
                     <ItemList products={products}/>
                     <ItemCount 
                         stock={stock}
-                        add={handleAdd} 
-                        rest={handleRest} 
-                        addCart={handleCart} 
+                        handleAdd={handleAdd} 
+                        handleRest={handleRest} 
+                        handleCart={handleCart} 
                         count={count} 
                         cart={cart}
                     />
