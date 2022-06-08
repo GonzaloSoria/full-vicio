@@ -23,9 +23,11 @@ const ItemListcontainer = () => {
         if((count + cart) > stock) {
             alert('No hay mas stock para agregar')
         } else {
-            add_cart.play()
             setCart(cart + count);
-        }
+            if(count != 0) {
+                add_cart.play()
+            };
+        };
     };
 
     const get_data = async () => {
