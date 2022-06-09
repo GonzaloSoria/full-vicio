@@ -29,7 +29,7 @@ const Navbar = () => {
                                 <div className="offcanvas-body">
                                     <nav className="nav">
                                         <ul>
-                                            <li className="d-flex align-items-center"><a onMouseOver={() => link.play()} href="#">Home<img src="assets/download.png" alt="" className="mb-0 ps-3"/></a></li>
+                                            <li className="d-flex align-items-center"><a onMouseOver={() => link.play()} href="#">Inicio<img src="assets/download.png" alt="" className="mb-0 ps-3"/></a></li>
                                             <li><a onMouseOver={() => link.play()} href="#">Carrito<img src="assets/download.png" alt="" className="mb-0 ps-3"/></a></li>
                                             <li><a onMouseOver={() => link.play()} href="#">Favoritos<img src="assets/download.png" alt="" className="mb-0 ps-3"/></a></li>
                                             <li><a onMouseOver={() => link.play()} href="#">Consolas<img src="assets/download.png" alt="" className="mb-0 ps-3"/></a></li>

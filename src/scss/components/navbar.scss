@@ -58,7 +58,8 @@ header {
 }
 /*MENU LATERAL*/
 .offcanvas-start {
-    background-color: $second-color-bg;
+    //background-color: $second-color-bg;
+    background-image: url('../../../public/assets/menu-bg.jpg');
     border: none;
     .menu {
         color: $font-white;
