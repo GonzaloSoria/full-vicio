@@ -3,7 +3,7 @@ const ItemCount = ({stock, handleAdd, handleRest, handleCart, count, cart}) => {
 
     return (
         <>
-            <div className="container pt-5 text-center">
+            <div className="container text-center">
                 <p className="stock mb-0">Stock: {stock}</p>
             </div>
             <div className="container d-flex justify-content-center align-items-center counter-container py-3">

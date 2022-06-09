@@ -1,0 +1,13 @@
+@import '../base/vars';
+
+.game-detail-container {
+    h2 {
+        color: $font-white;
+    }
+    p {
+        color: $third-color;
+    }
+    .price {
+        font-size: $subtitle-size;
+    }
+}

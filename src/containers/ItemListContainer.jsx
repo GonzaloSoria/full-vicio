@@ -17,7 +17,7 @@ const ItemListcontainer = () => {
     };
 
     const handleRest = () => {
-        count == 0 ? alert('No tiene productos') : setCount(count - 1);
+        count == 1 ? alert('No tiene productos') : setCount(count - 1);
     };
 
     const handleCart = () => {
