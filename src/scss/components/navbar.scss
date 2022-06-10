@@ -61,8 +61,8 @@ header {
     //background-color: $second-color-bg;
     background-image: url('../../../public/assets/menu-bg.jpg');
     border: none;
-    .menu {
-        color: $font-white;
+    .offcanvas-header{
+        padding: 1.5rem 1rem;
     }
     .btn-close {
         padding: 0.25em -0.75em;
