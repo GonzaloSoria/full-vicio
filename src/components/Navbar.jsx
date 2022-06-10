@@ -22,8 +22,7 @@ const Navbar = () => {
                                 </label>
                             </a>
                             <div className="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                                <div className="offcanvas-header">
-                                    <h5 className="offcanvas-title menu" id="offcanvasExampleLabel">Menu</h5>
+                                <div className="offcanvas-header justify-content-end">
                                     <button onClick={() => open_menu.play()} type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
                                 <div className="offcanvas-body">
