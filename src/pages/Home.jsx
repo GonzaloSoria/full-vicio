@@ -1,7 +1,7 @@
 import BannerHome from "../components/BannerHome";
 import Categories from "../components/Categories";
 import Slide from "../components/SlideHome";
-import PopularItemListContainer from "../containers/PopularItemListContainer";
+import PopularItemListContainer from "../components/PopularItemListContainer";
 
 const Home = () => {
     return (

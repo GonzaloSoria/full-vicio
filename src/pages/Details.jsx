@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import ItemDetail from "../components/ItemDetail";
-import { get_data_id } from "../helpers/get_data";
+import ItemDetail from '../components/ItemDetail';
+import { get_data_id } from '../helpers/get_data';
 
-const ItemDetailContainer = () => {
+const Details = () => {
     const [product, setProduct] = useState([])
 
     useEffect(() => {
@@ -28,4 +28,4 @@ const ItemDetailContainer = () => {
     )
 }
 
-export default ItemDetailContainer;
+export default Details;

@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar'
 import Home from './pages/Home';
-import ItemDetailContainer from './containers/ItemDetailContainer';
 import Products from './pages/Products';
+import Details from './pages/Details';
 
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/productos' element={<Products />}/>
-        <Route path='/detalle' element={<ItemDetailContainer />}/>
+        <Route path='/detalle' element={<Details />}/>
       </Routes>
     </BrowserRouter>
   );
