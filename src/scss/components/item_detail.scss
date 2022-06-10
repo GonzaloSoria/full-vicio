@@ -1,5 +1,11 @@
 @import '../base/vars';
 
+.mt-110 {
+    margin-top: 110px;
+    img {
+        border-radius: 20px;
+    }
+}
 .game-detail-container {
     h2 {
         color: $font-white;

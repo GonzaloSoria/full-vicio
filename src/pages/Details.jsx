@@ -20,6 +20,7 @@ const Details = () => {
                   title={product.title} 
                   description={product.description} 
                   image={product.image}
+                  trailer={product.trailer}
                   price={product.price}
                   stock= {product.stock}
                 />

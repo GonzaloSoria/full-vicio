@@ -36,6 +36,7 @@
     "price": 800,
     "image": "/assets/games/godofwar.jpg",
     "popular": true,
+    "trailer": "https://www.youtube.com/embed/EE-4GvjKcfs",
     "id": "4",
     "stock": 5
 },{
