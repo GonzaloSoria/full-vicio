@@ -1,16 +1,27 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ItemDetail from '../components/ItemDetail';
-import { get_data } from '../helpers/get_data';
+//import { get_data } from '../helpers/get_data';
 
 const Details = () => {
     const [product, setProduct] = useState({});
     const { id } = useParams();
-    console.log(id);
-    console.log(product);
 
     useEffect(() => {
-      get_data().then(resp => setProduct(resp))
+      const get_data = async () => {
+        const data = await fetch('../../database/DATABASE.json');
+        try {
+          const data_parsed = await data.json();
+          const data_found = data_parsed.find(game => {
+            return game.id === id;
+          });
+          setProduct(data_found);
+        } catch (error) {
+          console.log(error);
+        }
+       
+      }
+      get_data();
     }, []);
     
     return (
