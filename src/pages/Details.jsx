@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import ItemDetail from '../components/ItemDetail';
-import { get_data_id } from '../helpers/get_data';
+import { get_data_details } from '../helpers/get_data';
 
 const Details = () => {
-    const [product, setProduct] = useState([])
+    const [product, setProduct] = useState([]);
+    const { id } = useParams();
 
     useEffect(() => {
-      get_data_id(setProduct, "1");
+      get_data_details(setProduct, id)
     }, []);
     
     return (

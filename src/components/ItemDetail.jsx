@@ -7,6 +7,7 @@ const ItemDetail = ({title, description, price, image, stock}) => {
             <div className="col-12 col-md-6 mt-5 game-detail-container">
                 <h2>{title}</h2>
                 <p>{description}</p>
+                <p>{stock}</p>
                 <p className="price">${price} ARS</p>
             </div>
         </>

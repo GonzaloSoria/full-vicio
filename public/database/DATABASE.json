@@ -4,7 +4,7 @@
     "price": 500,
     "image": "assets/games/skyrim.jpg",
     "popular": true,
-    "id": "1",
+    "id": "0",
     "stock": 5
 },{
     "title": "The Witcher 3",
@@ -12,7 +12,7 @@
     "price": 800,
     "image": "assets/games/thewitcher3.jpg",
     "popular": true,
-    "id": "2",
+    "id": "1",
     "stock": 5
 },{
     "title": "FARCRY 6",
@@ -20,7 +20,7 @@
     "price": 800,
     "image": "assets/games/farcry6.jpg",
     "popular": false,
-    "id": "3",
+    "id": "2",
     "stock": 5
 },{
     "title": "Star Wars: Battlefront 2",
@@ -28,7 +28,7 @@
     "price": 800,
     "image": "assets/games/battlefront2.jpg",
     "popular": false,
-    "id": "4",
+    "id": "3",
     "stock": 5
 },{
     "title": "God of War: Ragnarok",
@@ -36,7 +36,7 @@
     "price": 800,
     "image": "assets/games/godofwar.jpg",
     "popular": true,
-    "id": "5",
+    "id": "4",
     "stock": 5
 },{
     "title": "Dark Souls 3",
@@ -44,7 +44,7 @@
     "price": 800,
     "image": "assets/games/darksouls3.jpg",
     "popular": true,
-    "id": "6",
+    "id": "5",
     "stock": 5
 },{
     "title": "Grand Theft Auto V",
@@ -52,7 +52,7 @@
     "price": 800,
     "image": "assets/games/gta5.jpg",
     "popular": true,
-    "id": "7",
+    "id": "6",
     "stock": 5
 },{
     "title": "Horizon Zero Dawn",
@@ -60,6 +60,6 @@
     "price": 800,
     "image": "assets/games/horizonzerodawn.jpg",
     "popular": true,
-    "id": "8",
+    "id": "7",
     "stock": 5
 }]
