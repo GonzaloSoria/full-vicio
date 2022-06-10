@@ -3,7 +3,6 @@ const ItemDetail = ({title, description, price, image, trailer, stock}) => {
         <>
             <div className="col-12 col-md-6 text-center mt-110">
                 <img src={image} alt={title} className="img-fluid"/> 
-                
             </div>
             <div className="col-12 col-md-6 game-detail-container mt-110">
                 <h2>{title}</h2>
