@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { get_data } from '../helpers/get_data';
+//import { get_data } from '../helpers/get_data';
 import ItemCount from '../components/ItemCount';
 import ItemList from '../components/ItemList';
 
@@ -13,11 +13,11 @@ const Products = () => {
     add_cart.src = 'assets/sounds/add_cart.wav';
 
     const handleAdd = () => {
-        count == stock ? alert('No hay mas stock') : setCount(count + 1);
+        count === stock ? alert('No hay mas stock') : setCount(count + 1);
     };
 
     const handleRest = () => {
-        count == 1 ? alert('No tiene productos') : setCount(count - 1);
+        count === 1 ? alert('No tiene productos') : setCount(count - 1);
     };
 
     const handleCart = () => {
@@ -25,14 +25,14 @@ const Products = () => {
             alert('No hay mas stock para agregar')
         } else {
             setCart(cart + count);
-            if(count != 0) {
+            if(count !== 0) {
                 add_cart.play()
             };
         };
     };
 
     useEffect(() => {
-        get_data(setProducts)
+        //get_data(setProducts)
     }, []);
 
     return (

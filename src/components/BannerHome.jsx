@@ -1,7 +1,7 @@
 const BannerHome = () => {
     return (
         <>
-            <div className="container-fluid pt-3 pt-md-1">
+            <div className="container-fluid pt-3 pt-md-1" id="categorias">
                 <div className="container my-2 container-banner">
                     <div className="row">
                         <div className="col-12 col-md-6 d-flex flex-column justify-content-center bg-gris">
