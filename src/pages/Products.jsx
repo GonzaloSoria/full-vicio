@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
-//import { get_data } from '../helpers/get_data';
+import { get_all_data } from '../helpers/get_all_data';
 import ItemCount from '../components/ItemCount';
 import ItemList from '../components/ItemList';
+import { useParams } from 'react-router-dom';
 
 const Products = () => {
     const [products, setProducts] = useState([]);
     const [count, setCount] = useState(1);
     const [cart, setCart] = useState(0);
+    const { category } = useParams();
     let stock = 5;
 
     const add_cart = new Audio();
@@ -32,8 +34,8 @@ const Products = () => {
     };
 
     useEffect(() => {
-        //get_data(setProducts)
-    }, []);
+        get_all_data(setProducts, category);
+    }, [category]);
 
     return (
         <>
