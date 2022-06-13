@@ -7,13 +7,21 @@ const Details = () => {
     const [product, setProduct] = useState({});
     const { id } = useParams();
 
+    const bg_styles = {
+      backgroundImage: `url(${product.background})`,
+      backgroundPosition: "center",
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat"
+    }
+
     useEffect(() => {
       get_data_details(setProduct, id);
     }, []);
     
     return (
         <>
-          <div className="container-fluid">
+          <div className="container-fluid px-0">
+            <div style={bg_styles} className="pt-250"></div>
             <div className="container">
               <div className="row">
                 <ItemDetail 
