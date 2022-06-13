@@ -9,7 +9,7 @@ const Details = () => {
 
     useEffect(() => {
       get_data_details(setProduct, id);
-    }, [id]);
+    }, []);
     
     return (
         <>
