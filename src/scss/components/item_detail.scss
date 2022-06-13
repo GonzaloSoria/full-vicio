@@ -7,6 +7,7 @@
     margin-top: -50px;
     img {
         border-radius: 20px;
+        width: 250px;
     }
 }
 .game-detail-container {
@@ -18,6 +19,11 @@
     }
     .price {
         font-size: $subtitle-size;
+        font-weight: $fw-bold;
         color: $first-color;
     }
+}
+
+.description {
+    color: $third-color;
 }
