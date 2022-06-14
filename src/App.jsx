@@ -4,7 +4,6 @@ import Home from './routes/Home';
 import Products from './routes/Products';
 import Details from './routes/Details';
 
-
 const App = () => {
   return (
     <BrowserRouter>
