@@ -30,6 +30,7 @@ const ItemDetail = ({title, description, price, image, stock}) => {
                 <p>{description}</p>
                 <p className="price">${price} ARS</p>
                 <p>Stock: {stock}</p>
+                <p className="mb-0" style={{color: 'red', visibility: 'visible'}}>No hay más stock</p>
                 <ItemCount 
                     handleCart={handleCart}
                     count={count}
