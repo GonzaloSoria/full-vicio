@@ -14,6 +14,7 @@ const Products = () => {
 
     return (
         <>
+            <img src="assets/todos-los-juegos.jpg" alt="" className="img-fluid"/>
             <div className="container-fluid">
                 <div className="container py-5">
                     <h2 className="subtitles mb-1">Todos los juegos</h2>

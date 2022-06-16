@@ -1,4 +1,6 @@
 import { useState } from "react";
+import ContinueBuying from "./ContinueBuying";
+import GoToCart from "./GoToCart";
 import ItemCount from "./ItemCount";
 
 const ItemDetail = ({title, description, price, image, stock}) => {
@@ -24,23 +26,27 @@ const ItemDetail = ({title, description, price, image, stock}) => {
             <div className="col-12 col-md-6 text-center mt-neg-50 px-4">
                 <img src={image} alt={title} className="img-fluid"/> 
             </div>
-            <div className="col-12 col-md-6 my-5 game-detail-container">
+            <div className="col-12 col-md-6 my-5 pt-2 game-detail-container">
                 <h2>{title}</h2>
                 <img src="/assets/download.png" alt="" className="img-fluid mb-4"/>
                 <p>{description}</p>
                 <p className="price">${price} ARS</p>
                 <p>Stock: {stock}</p>
-                <ItemCount 
-                    handleCart={handleCart}
-                    count={count}
-                    setCount={setCount}
-                    stock={stock}
-                />
-            </div>
-            <div className="col-12">
+                {cart === 0 ?
+                    <ItemCount 
+                        handleCart={handleCart}
+                        count={count}
+                        setCount={setCount}
+                        stock={stock}
+                    />
+                    :
+                    <>
+                        <ContinueBuying />
+                        <GoToCart />
+                    </>
+            }
                 
-            </div>
-            
+            </div>            
         </>
     );
 };

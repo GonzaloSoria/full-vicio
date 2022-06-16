@@ -53,6 +53,23 @@
     text-align: center;
 }
 
+@mixin item-details-button() {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: $fw-bold;
+    font-size: $button-font-size;
+    color: $font-black;
+    background-color: $second-color;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    border: none;
+    &:hover {
+        color: $font-black;
+    }
+}
+
 /*subtitles*/
 @mixin bg-categories() {
     background-position: center;

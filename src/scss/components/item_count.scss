@@ -1,4 +1,5 @@
 @import '../base/vars';
+@import '../base/mixins';
 
 .counter-container {
     p {
@@ -41,16 +42,7 @@
 }
 
 .añadir-carrito {
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-weight: $fw-bold;
-    font-size: $button-font-size;
-    color: $font-black;
-    background-color: $second-color;
-    width: 100%;
-    max-width: 350px;
-    text-align: center;
-    border: none;
+    @include item-details-button();
 }
 
 .stock {

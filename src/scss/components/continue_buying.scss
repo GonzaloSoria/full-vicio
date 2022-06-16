@@ -1,0 +1,7 @@
+@import '../base/vars';
+@import '../base/mixins';
+
+.continue-buying {
+    margin-top: 32px;
+    @include item-details-button();
+}
