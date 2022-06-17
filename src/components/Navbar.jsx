@@ -3,6 +3,22 @@ import CartWidget from "./CartWidget";
 import FavWidget from "./FavWidget";
 
 const Navbar = () => {
+    const links = [{
+        name: 'Inicio',
+        route: '/'
+    }, {
+        name: 'Carrito',
+        route: '/carrito'
+    }, {
+        name: 'Favoritos',
+        route: '/favoritos'
+    }, {
+        name: 'Juegos',
+        route: '/productos'
+    }, {
+        name: 'Categorias',
+        route: '/categorias'
+    }]
     const link = new Audio();
     const open_menu = new Audio();
 
@@ -29,11 +45,11 @@ const Navbar = () => {
                                 <div className="offcanvas-body">
                                     <nav className="nav">
                                         <ul>
-                                            <li className="d-flex align-items-center"><Link onMouseOver={() => link.play()} onClick={() => open_menu.play()}  to='/'>Inicio<img src="assets/download.png" alt="" className="mb-0 ps-3"/></Link></li>
-                                            <li><Link onMouseOver={() => link.play()} onClick={() => open_menu.play()} to='/carrito'>Carrito<img src="assets/download.png" alt="" className="mb-0 ps-3"/></Link></li>
-                                            <li><Link onMouseOver={() => link.play()} onClick={() => open_menu.play()} to='/favoritos'>Favoritos<img src="assets/download.png" alt="" className="mb-0 ps-3"/></Link></li>
-                                            <li><Link onMouseOver={() => link.play()} onClick={() => open_menu.play()} to='/productos'>Juegos<img src="assets/download.png" alt="" className="mb-0 ps-3"/></Link></li>
-                                            <li><Link onMouseOver={() => link.play()} onClick={() => open_menu.play()} to='/#categorias'>Categorias<img src="assets/download.png" alt="" className="mb-0 ps-3"/></Link></li>
+                                            {links.map((link) => {
+                                                return (
+                                                    <li className="d-flex align-items-center"><Link onMouseOver={() => link.play()} onClick={() => open_menu.play()}  to={link.route}>{link.name}<img src="assets/download.png" alt="" className="mb-0 ps-3"/></Link></li>
+                                                )
+                                            })}
                                         </ul>
                                     </nav>
                                     <Link to='/'><h1 className="brand d-block d-md-none border-none">Fullvicio.</h1></Link>
@@ -44,7 +60,7 @@ const Navbar = () => {
                         <div className="d-flex justifi-content-center">
                             <form action="" className="d-flex justify-content-center align-items-center search-form">
                                 <input type="search" placeholder="Buscar"/>
-                                <input type="image" src="assets/lupa.png" className="lupa"/>
+                                <input type="image" src="assets/lupa.png" alt='lupa' className="lupa"/>
                             </form>
                             <div className="bg-juegos mx-2">
                                 <Link to='/productos' onClick={() => open_menu.play()} className="juegos">Juegos</Link>
