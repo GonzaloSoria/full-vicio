@@ -6,16 +6,16 @@ const Navbar = () => {
     const links = [{
         name: 'Inicio',
         route: '/'
-    }, {
+    },{
         name: 'Carrito',
         route: '/carrito'
-    }, {
+    },{
         name: 'Favoritos',
         route: '/favoritos'
-    }, {
+    },{
         name: 'Juegos',
         route: '/productos'
-    }, {
+    },{
         name: 'Categorias',
         route: '/categorias'
     }]
