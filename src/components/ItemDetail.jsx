@@ -1,24 +1,16 @@
 import { useState } from "react";
+import { useCartContext } from "../context/CartContext";
 import ContinueBuying from "./ContinueBuying";
 import GoToCart from "./GoToCart";
 import ItemCount from "./ItemCount";
 
-const ItemDetail = ({title, description, price, image, stock}) => {
-    const [cart, setCart] = useState(0);
-    const [count, setCount] = useState(1);
+const ItemDetail = ({title, description, price, image, stock, product}) => {
+    const {handleCart} = useCartContext();
+    const [bought, seBought] = useState(false)
 
-    const add_cart = new Audio();
-    add_cart.src = 'assets/sounds/add_cart.wav';
-
-    const handleCart = () => {
-        if((count + cart) > stock) {
-            alert('No hay mas stock para agregar')
-        } else {
-            setCart(cart + count);
-            if(count !== 0) {
-                add_cart.play()
-            };
-        };
+    const add_to_cart = (count) => {
+        handleCart({...product, quantity: count, amount: price * count});
+        seBought(true);
     };
 
     return (
@@ -32,20 +24,18 @@ const ItemDetail = ({title, description, price, image, stock}) => {
                 <p>{description}</p>
                 <p className="price">${price} ARS</p>
                 <p>Stock: {stock}</p>
-                {cart === 0 ?
-                    <ItemCount 
-                        handleCart={handleCart}
-                        count={count}
-                        setCount={setCount}
-                        stock={stock}
-                    />
-                    :
-                    <>
-                        <ContinueBuying />
-                        <GoToCart />
-                    </>
-            }
-                
+                {
+                    bought === false ?
+                        <ItemCount 
+                            add_to_cart={add_to_cart}
+                            stock={stock}
+                        />
+                        :
+                        <>
+                            <ContinueBuying />
+                            <GoToCart />
+                        </>
+                }
             </div>            
         </>
     );

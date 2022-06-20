@@ -1,5 +1,7 @@
-const ItemCount = ({handleCart, stock, count, setCount}) => {
+import { useState } from "react";
 
+const ItemCount = ({add_to_cart, stock}) => {
+    const [count, setCount] = useState(1);
     const handleAdd = () => {
         count === stock ? alert('No hay mas stock') : setCount(count + 1);
     };
@@ -8,6 +10,10 @@ const ItemCount = ({handleCart, stock, count, setCount}) => {
         count === 1 ? alert('No tiene productos') : setCount(count - 1);
     };
 
+    const add_product = () => {
+        add_to_cart(count);
+    }
+
     return (
         <>
             <div className="d-flex justify-content-left align-items-center counter-container py-3">
@@ -15,7 +21,7 @@ const ItemCount = ({handleCart, stock, count, setCount}) => {
                 <p>{count}</p>
                 <button onClick={handleAdd} type="button" className="btn btn-warning add">+</button>
             </div>
-            <button className="añadir-carrito" onClick={handleCart}>AÑADIR AL CARRITO</button>
+            <button className="añadir-carrito" onClick={add_product}>AÑADIR AL CARRITO</button>
         </>
     );
 };

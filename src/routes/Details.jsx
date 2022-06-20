@@ -28,9 +28,9 @@ const Details = () => {
                   title={product.title} 
                   description={product.description} 
                   image={product.image}
-                  trailer={product.trailer}
                   price={product.price}
-                  stock= {product.stock}
+                  stock={product.stock}
+                  product={product}
                 />
               </div>
             </div>

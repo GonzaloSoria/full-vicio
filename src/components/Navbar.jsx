@@ -47,7 +47,7 @@ const Navbar = () => {
                                         <ul>
                                             {links.map((link) => {
                                                 return (
-                                                    <li className="d-flex align-items-center"><Link onMouseOver={() => link.play()} onClick={() => open_menu.play()}  to={link.route}>{link.name}<img src="assets/download.png" alt="" className="mb-0 ps-3"/></Link></li>
+                                                    <li key={link.name} className="d-flex align-items-center"><Link onMouseOver={() => link.play()} onClick={() => open_menu.play()}  to={link.route}>{link.name}<img src="assets/download.png" alt="" className="mb-0 ps-3"/></Link></li>
                                                 )
                                             })}
                                         </ul>
