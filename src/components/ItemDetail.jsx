@@ -6,11 +6,11 @@ import ItemCount from "./ItemCount";
 
 const ItemDetail = ({title, description, price, image, stock, product}) => {
     const {handleCart} = useCartContext();
-    const [bought, seBought] = useState(false)
+    const [bought, setBought] = useState(false)
 
     const add_to_cart = (count) => {
         handleCart({...product, quantity: count, amount: price * count});
-        seBought(true);
+        setBought(true);
     };
 
     return (

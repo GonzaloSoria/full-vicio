@@ -10,7 +10,7 @@ const CartContextProvider = ({children}) => {
     const handleCart = (product) => {
         const in_cart = cart.find(product_cart => product_cart.id === product.id)
         if(in_cart) {
-            if(in_cart.quantity > product.stock) {
+            if((in_cart.quantity + product.quantity) > product.stock) {
                 alert('No hay mas stock, siga comprando otro producto')
             } else {
                 setCart([{...in_cart, quantity: in_cart.quantity + product.quantity, amount: in_cart.amount + product.amount}]);
