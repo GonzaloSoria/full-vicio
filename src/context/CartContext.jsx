@@ -13,19 +13,23 @@ const CartContextProvider = ({children}) => {
             if((in_cart.quantity + product.quantity) > product.stock) {
                 alert('No hay mas stock, siga comprando otro producto')
             } else {
-                setCart([{...in_cart, quantity: in_cart.quantity + product.quantity, amount: in_cart.amount + product.amount}]);
+                const cart_products = cart.filter(cart_product => cart_product !== in_cart)
+                setCart([...cart_products, {...in_cart, quantity: in_cart.quantity + product.quantity, amount: in_cart.amount + product.amount}]);
             }
         } else {
             setCart([...cart, product]);
         };
-        
     };
 
+    const cart_widget = cart.reduce((acc, products) => {
+        return acc = acc + products.quantity;
+    }, 0)
 
     return (
         <CartContext.Provider value={{
             cart,
-            handleCart
+            handleCart,
+            cart_widget
         }}>
             {children}
         </CartContext.Provider>
