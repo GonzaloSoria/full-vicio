@@ -29,6 +29,10 @@ const CartContextProvider = ({children}) => {
         };
     };
 
+    const clear_cart = () => {
+        setCart([]);
+    };
+
     const cart_widget = cart.reduce((quantity, products) => {
         return quantity = quantity + products.quantity;
     }, 0);
@@ -42,6 +46,7 @@ const CartContextProvider = ({children}) => {
             cart,
             handle_cart,
             delete_product,
+            clear_cart,
             total_amount,
             cart_widget
         }}>
