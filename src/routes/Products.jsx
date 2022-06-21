@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { get_all_data } from '../helpers/get_all_data';
-import ItemCount from '../components/ItemCount';
 import ItemList from '../components/ItemList';
 import { useParams } from 'react-router-dom';
 
