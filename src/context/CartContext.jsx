@@ -25,7 +25,7 @@ const CartContextProvider = ({children}) => {
         const in_cart = cart.find(product_cart => product_cart.id === product_id);
         if(in_cart) {
             const cart_products = cart.filter(cart_product => cart_product !== in_cart)
-            return setCart([...cart_products]);
+            setCart([...cart_products]);
         };
     };
 
