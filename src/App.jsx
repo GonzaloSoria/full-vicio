@@ -4,6 +4,7 @@ import Home from './routes/Home';
 import Products from './routes/Products';
 import Details from './routes/Details';
 import CartContextProvider from './context/CartContext';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path='/categoria/:category' element={<Products />} />
         <Route path='/detalle/:id' element={<Details />} /> 
       </Routes>
+      <Footer />
     </CartContextProvider>
     </BrowserRouter>
   );
