@@ -7,7 +7,7 @@ const CartContextProvider = ({children}) => {
     const [cart, setCart] = useState([]);
     console.log(cart);
 
-    const handleCart = (product) => {
+    const handle_cart = (product) => {
         const in_cart = cart.find(product_cart => product_cart.id === product.id)
         if(in_cart) {
             if((in_cart.quantity + product.quantity) > product.stock) {
@@ -28,7 +28,7 @@ const CartContextProvider = ({children}) => {
     return (
         <CartContext.Provider value={{
             cart,
-            handleCart,
+            handle_cart,
             cart_widget
         }}>
             {children}
