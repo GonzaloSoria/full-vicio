@@ -21,8 +21,8 @@ const CartContextProvider = ({children}) => {
         };
     };
 
-    const delete_product = (product) => {
-        const in_cart = cart.find(product_cart => product_cart.id === product.id);
+    const delete_product = (product_id) => {
+        const in_cart = cart.find(product_cart => product_cart.id === product_id);
         if(in_cart) {
             const cart_products = cart.filter(cart_product => cart_product !== in_cart)
             return setCart([...cart_products]);
