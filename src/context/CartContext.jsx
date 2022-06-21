@@ -33,11 +33,16 @@ const CartContextProvider = ({children}) => {
         return quantity = quantity + products.quantity;
     }, 0);
 
+    const total_amount = cart.reduce((amount, products) => {
+        return amount = amount + products.amount;
+    }, 0);
+
     return (
         <CartContext.Provider value={{
             cart,
             handle_cart,
             delete_product,
+            total_amount,
             cart_widget
         }}>
             {children}
