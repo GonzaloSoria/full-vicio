@@ -21,8 +21,8 @@ const CartContextProvider = ({children}) => {
         };
     };
 
-    const cart_widget = cart.reduce((acc, products) => {
-        return acc = acc + products.quantity;
+    const cart_widget = cart.reduce((quantity, products) => {
+        return quantity = quantity + products.quantity;
     }, 0)
 
     return (
