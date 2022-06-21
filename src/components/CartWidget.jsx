@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useCartContext } from '../context/CartContext';
 
 const CartWidget = () => {
@@ -6,7 +7,7 @@ const CartWidget = () => {
     return (
         <>
             <div className="bg-cart">
-                <a href="#"><img src="assets/cart.png" alt="" /></a>
+                <Link to='/carrito'><img src="assets/cart.png" alt="" /></Link>
                 <div className="widget d-flex justify-content-center align-items-center">{cart_widget}</div>
             </div>
         </>

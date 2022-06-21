@@ -5,6 +5,7 @@ import Products from './routes/Products';
 import Details from './routes/Details';
 import CartContextProvider from './context/CartContext';
 import Footer from './components/Footer';
+import Cart from './routes/Cart';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path='/productos' element={<Products />} />
         <Route path='/categoria/:category' element={<Products />} />
         <Route path='/detalle/:id' element={<Details />} /> 
+        <Route path='/carrito' element={<Cart />} />
       </Routes>
       <Footer />
     </CartContextProvider>
