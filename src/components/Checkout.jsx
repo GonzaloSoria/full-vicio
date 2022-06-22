@@ -1,8 +1,9 @@
 import { useCartContext } from '../context/CartContext';
+import { Link } from 'react-router-dom';
 import ItemCart from "./ItemCart";
 
 const Checkout = () => {
-    const {cart, clear_cart} = useCartContext();
+    const {cart, clear_cart, cart_widget, total_amount} = useCartContext();
     return (
         <>
             <div className="col-12 col-md-8">
@@ -23,10 +24,16 @@ const Checkout = () => {
                         })
                     }
                 </div>
-                <button className="añadir-carrito" onClick={clear_cart}>VACIAR CARRITO</button>
+                <Link to='/productos' className="añadir-carrito">CONTINUAR COMPRANDO</Link>
+                <button className="mt-3 añadir-carrito" onClick={clear_cart}>VACIAR CARRITO</button>
             </div>
             <div className='col-12 col-md-4'>
-
+                <div className='pay-container'>
+                    <h2>RESUMEN DE COMPRA</h2>
+                    <p>Tienes {cart_widget} productos</p>
+                    <h3>TOTAL</h3>
+                    <p>$ {total_amount} ARS</p>
+                </div>
             </div>
         </>
     )
