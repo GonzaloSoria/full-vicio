@@ -2,7 +2,7 @@ import { useCartContext } from '../context/CartContext';
 import ItemCart from "./ItemCart";
 
 const Checkout = () => {
-    const {cart} = useCartContext();
+    const {cart, clear_cart} = useCartContext();
     return (
         <>
             <div className="col-12 col-md-8">
@@ -23,6 +23,7 @@ const Checkout = () => {
                         })
                     }
                 </div>
+                <button className="añadir-carrito" onClick={clear_cart}>VACIAR CARRITO</button>
             </div>
             <div className='col-12 col-md-4'>
 

@@ -31,6 +31,7 @@ const ItemCart = ({image, title, price, quantity, amount, id}) => {
                     </div>
                 </div>
                 <input onClick={delete_product_id} type="image" src="assets/trash.png" alt='lupa' className="pt-3" style={{width: '60px'}}/>
+                <hr />
             </div>
         </div>
         </>
