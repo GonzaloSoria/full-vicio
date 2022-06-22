@@ -1,4 +1,12 @@
-const ItemCart = ({image, title, price, quantity, amount}) => {
+import { useCartContext } from "../context/CartContext";
+
+const ItemCart = ({image, title, price, quantity, amount, id}) => {
+    const {delete_product} = useCartContext();
+
+    const delete_product_id = () => {
+        delete_product(id);
+    }
+
     return (
         <>
         <div className="col-12 py-3 item-cart-container">
@@ -22,7 +30,7 @@ const ItemCart = ({image, title, price, quantity, amount}) => {
                         </div>
                     </div>
                 </div>
-                <button style={{width: '200px'}}>Eliminar Juego</button>
+                <input onClick={delete_product_id} type="image" src="assets/trash.png" alt='lupa' className="pt-3" style={{width: '60px'}}/>
             </div>
         </div>
         </>

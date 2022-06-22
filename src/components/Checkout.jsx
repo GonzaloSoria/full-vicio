@@ -17,6 +17,7 @@ const Checkout = () => {
                                     price={product.price}
                                     quantity={product.quantity}
                                     amount={product.amount}
+                                    id={product.id}
                                 />
                             )
                         })
