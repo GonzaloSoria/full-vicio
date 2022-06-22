@@ -30,10 +30,9 @@ const Checkout = () => {
             <div className='col-12 col-md-4'>
                 <div className='pay-container'>
                     <h2>RESUMEN DE COMPRA</h2>
-
                     <p>Tienes {cart_widget} {cart_widget === 1 ? 'producto' : 'productos'}</p>
                     <h3>TOTAL</h3>
-                    <p>$ {total_amount} ARS</p>
+                    <p>${total_amount} ARS</p>
                 </div>
             </div>
         </>
