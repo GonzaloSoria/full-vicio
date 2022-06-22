@@ -1,0 +1,18 @@
+@import '../base/vars';
+
+.item-cart-container {
+    img {
+        width: 100px;
+        height: auto;
+        border-radius: 10px;
+    }
+    h3 {
+        color: $font-white;
+    }
+    .title-cart-items {
+        color: $font-white;
+    }
+    p {
+        color: $third-color;
+    }
+}

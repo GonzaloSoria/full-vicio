@@ -1,0 +1,15 @@
+@import '../base/vars';
+
+.empty-cart {
+    color: $font-white;
+    margin-top: 10rem;
+}
+
+.img-empty-cart {
+    width: 160px !important;
+    height: auto;
+}
+
+.empty-cart-text {
+    color: $third-color;
+}
