@@ -6,8 +6,10 @@ const Checkout = () => {
     const {cart, clear_cart, cart_widget, total_amount} = useCartContext();
     return (
         <>
-            <div className="col-12 col-md-8">
-                <div className="row mb-5">
+            <div className="col-12 col-md-8 mt-3">
+                <h2 className='carrito'>Carrito de compras</h2>
+                <img src="assets/download.png" alt="" />
+                <div className="row my-3">
                     {
                         cart.map((product) => {
                             return (
@@ -27,7 +29,7 @@ const Checkout = () => {
                 <Link to='/productos' className="continue-buying mx-auto mx-md-0">CONTINUAR COMPRANDO</Link>
                 <button className="mt-3 vaciar-carrito mx-auto mx-md-0" onClick={clear_cart}>VACIAR CARRITO</button>
             </div>
-            <div className='col-12 col-md-4 mt-5 mt-md-3'>
+            <div className='col-12 col-md-4 mt-5 py-3 py-md-5'>
                 <div className='pay-container shadow'>
                     <h2>RESUMEN DE COMPRA</h2>
                     <p>Tienes {cart_widget} {cart_widget === 1 ? 'producto' : 'productos'}</p>
