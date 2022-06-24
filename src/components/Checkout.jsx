@@ -24,10 +24,10 @@ const Checkout = () => {
                         })
                     }
                 </div>
-                <Link to='/productos' className="añadir-carrito">CONTINUAR COMPRANDO</Link>
-                <button className="mt-3 añadir-carrito">VACIAR CARRITO</button>
+                <Link to='/productos' className="añadir-carrito mx-auto mx-md-0">CONTINUAR COMPRANDO</Link>
+                <button className="mt-3 añadir-carrito mx-auto mx-md-0">VACIAR CARRITO</button>
             </div>
-            <div className='col-12 col-md-4'>
+            <div className='col-12 col-md-4 mt-5 mt-md-3'>
                 <div className='pay-container shadow'>
                     <h2>RESUMEN DE COMPRA</h2>
                     <p>Tienes {cart_widget} {cart_widget === 1 ? 'producto' : 'productos'}</p>
