@@ -33,8 +33,9 @@ const Checkout = () => {
                     <p>Tienes {cart_widget} {cart_widget === 1 ? 'producto' : 'productos'}</p>
                     <h3>TOTAL</h3>
                     <hr />
-                    <p className='total'>${total_amount} ARS</p>
-                    <button className="mt-3 añadir-carrito" onClick={clear_cart}>INICIAR PAGO</button>
+                    <p className='total mb-0'>${total_amount} ARS</p>
+                    <img src="assets/download.png" alt="" />
+                    <button className="mt-5 añadir-carrito" onClick={clear_cart}>INICIAR PAGO</button>
                 </div>
             </div>
         </>
