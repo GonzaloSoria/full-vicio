@@ -42,7 +42,7 @@
 }
 
 .añadir-carrito {
-    @include item-details-button();
+    @include button();
 }
 
 .stock {

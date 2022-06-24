@@ -1,4 +1,9 @@
 @import '../base/vars';
+@import '../base/mixins';
+
+.vaciar-carrito {
+    @include button();
+}
 
 .pay-container {
     background-color: $first-color-bg;
@@ -23,5 +28,9 @@
         color: $font-white;
         font-weight: $fw-bold;
         font-size: 30px;
+    }
+    .iniciar-pago {
+        @include button();
+        max-width: 100%;
     }
 }

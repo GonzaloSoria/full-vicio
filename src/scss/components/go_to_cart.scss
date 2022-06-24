@@ -3,5 +3,5 @@
 
 .go-to-cart {
     margin-top: 18px;
-    @include item-details-button();
+    @include button();
 }

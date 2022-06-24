@@ -24,8 +24,8 @@ const Checkout = () => {
                         })
                     }
                 </div>
-                <Link to='/productos' className="añadir-carrito mx-auto mx-md-0">CONTINUAR COMPRANDO</Link>
-                <button className="mt-3 añadir-carrito mx-auto mx-md-0" onClick={clear_cart}>VACIAR CARRITO</button>
+                <Link to='/productos' className="continue-buying mx-auto mx-md-0">CONTINUAR COMPRANDO</Link>
+                <button className="mt-3 vaciar-carrito mx-auto mx-md-0" onClick={clear_cart}>VACIAR CARRITO</button>
             </div>
             <div className='col-12 col-md-4 mt-5 mt-md-3'>
                 <div className='pay-container shadow'>
@@ -35,7 +35,7 @@ const Checkout = () => {
                     <hr />
                     <p className='total mb-0'>${total_amount} ARS</p>
                     <img src="assets/download.png" alt="" />
-                    <button className="mt-5 añadir-carrito">INICIAR PAGO</button>
+                    <button className="mt-5 iniciar-pago">INICIAR PAGO</button>
                 </div>
             </div>
         </>
