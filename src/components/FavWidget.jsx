@@ -1,8 +1,10 @@
+import { Link } from 'react-router-dom'
+
 const FavWidget = () => {
     return (
         <>
             <div className="bg-fav">
-                <a href="#"><img src="assets/favorito.png" alt="" /></a>
+                <Link to='/favoritos'><img src="assets/favorito.png" alt="" /></Link>
             </div>
         </>
     )
