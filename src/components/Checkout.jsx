@@ -25,7 +25,7 @@ const Checkout = () => {
                     }
                 </div>
                 <Link to='/productos' className="añadir-carrito">CONTINUAR COMPRANDO</Link>
-                <button className="mt-3 añadir-carrito" onClick={clear_cart}>VACIAR CARRITO</button>
+                <button className="mt-3 añadir-carrito">VACIAR CARRITO</button>
             </div>
             <div className='col-12 col-md-4'>
                 <div className='pay-container shadow'>
