@@ -5,6 +5,11 @@
     @include button();
 }
 
+.carrito {
+    color: $font-white;
+    font-weight: $fw-bold;
+}
+
 .pay-container {
     background-color: $first-color-bg;
     padding: 20px;
