@@ -11,27 +11,28 @@ const ItemCart = ({image, title, price, quantity, amount, id}) => {
         <>
         <div className="col-12 py-3 item-cart-container">
             <div className="row">
-                <div className="col-4 col-md-3">
+                <div className="col-3 col-md-2">
                     <img src={image} alt={title} />
                 </div>
-                <div className="col-8 col-md-9">
+                <div className="col-7 col-md-8 mt-3">
                     <div className="row">
                         <div className="col-12 col-lg-4 text-center">
                             <p className="d-none d-lg-block title-cart-items">Nombre</p>
-                            <p>{title}</p>
+                            <p className="mb-0">{title}</p>
                         </div>
                         <div className="col-12 col-lg-4 text-center">
                             <p className="d-none d-lg-block title-cart-items">Precio</p>
-                            <p><span className="d-inline-block d-lg-none">Precio:</span> ${price} ARS <span style={{fontSize: '12px'}}>x{quantity}</span></p>
+                            <p className="mb-0"><span className="d-inline-block d-lg-none">Precio:</span> ${price} ARS <span style={{fontSize: '12px'}}>x{quantity}</span></p>
                         </div>
                         <div className="col-12 col-lg-4 text-center">
                             <p className="d-none d-lg-block title-cart-items">Monto total</p>
-                            <p><span className="d-inline-block d-lg-none">Total:</span> ${amount} ARS</p>
+                            <p className="mb-0"><span className="d-inline-block d-lg-none">Total:</span> ${amount} ARS</p>
                         </div>
                     </div>
                 </div>
-                <input onClick={delete_product_id} type="image" src="assets/trash.png" alt='lupa' className="pt-3" style={{width: '60px'}}/>
-                <hr />
+                <div className="col-2 mt-3">
+                    <input onClick={delete_product_id} type="image" src="assets/trash.png" alt='garbage' className="pt-3 delete-product"/>
+                </div>
             </div>
         </div>
         </>
