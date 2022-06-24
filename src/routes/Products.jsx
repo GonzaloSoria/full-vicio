@@ -6,6 +6,23 @@ import { useParams } from 'react-router-dom';
 const Products = () => {
     const [products, setProducts] = useState([]);
     const { category } = useParams();
+    let background;
+
+    if(category === undefined) {
+        background = '/assets/todos-los-juegos.jpg';
+    } else if (category === 'rpg') {
+        background = '/assets/banner-rpg.jpg';
+    } else if (category === 'strategy') {
+        background = '/assets/banner-strategy.jpg';
+    } else if (category === 'shooter') {
+        background = '/assets/banner-shooter.jpg';
+    } else if (category === 'simulator') {
+        background = '/assets/banner-simulator.jpg';
+    } else if (category === 'sports') {
+        background = '/assets/banner-sports.jpg';
+    } else if (category === 'royal') {
+        background = '/assets/banner-royal.jpg';
+    }
    
     useEffect(() => {
         get_all_data(setProducts, category);
@@ -13,11 +30,10 @@ const Products = () => {
 
     return (
         <>
-            <img src="assets/todos-los-juegos.jpg" alt="" className="img-fluid"/>
+
+            <img src={background} alt="" className="img-fluid mt-5 pt-3"/>
             <div className="container-fluid">
                 <div className="container py-5">
-                    <h2 className="subtitles mb-1">Todos los juegos</h2>
-                    <img src="assets/download.png" alt="" className="img-fluid mb-4"/>
                     <div className="row">
                         <ItemList products={products}/>
                     </div>
