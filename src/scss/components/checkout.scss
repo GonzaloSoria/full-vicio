@@ -9,6 +9,9 @@
     background-color: $first-color-bg;
     padding: 20px;
     border-radius: 10px;
+    position: sticky;
+    top: 110px;
+    z-index: 1020;
     h2 {
         color: $first-color;
         font-weight: $fw-bold;
