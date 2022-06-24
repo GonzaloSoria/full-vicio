@@ -34,7 +34,6 @@ const Checkout = () => {
                     <h3>TOTAL</h3>
                     <hr />
                     <p className='total mb-0'>${total_amount} ARS</p>
-                    <img src="assets/download.png" alt="" />
                     <button className="mt-5 iniciar-pago">INICIAR PAGO</button>
                 </div>
             </div>
