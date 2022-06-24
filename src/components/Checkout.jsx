@@ -7,7 +7,7 @@ const Checkout = () => {
     return (
         <>
             <div className="col-12 col-md-8">
-                <div className="row">
+                <div className="row mb-5">
                     {
                         cart.map((product) => {
                             return (
