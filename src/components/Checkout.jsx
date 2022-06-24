@@ -32,6 +32,7 @@ const Checkout = () => {
                     <h2>RESUMEN DE COMPRA</h2>
                     <p>Tienes {cart_widget} {cart_widget === 1 ? 'producto' : 'productos'}</p>
                     <h3>TOTAL</h3>
+                    <hr />
                     <p className='total'>${total_amount} ARS</p>
                     <button className="mt-3 añadir-carrito" onClick={clear_cart}>INICIAR PAGO</button>
                 </div>

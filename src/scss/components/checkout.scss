@@ -15,6 +15,10 @@
         color: $first-color;
         font-weight: $fw-bold;
     }
+    hr {
+        opacity: 1;
+        color: $third-color;
+    }
     .total {
         color: $font-white;
         font-weight: $fw-bold;
