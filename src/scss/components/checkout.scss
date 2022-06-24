@@ -1,7 +1,23 @@
 @import '../base/vars';
 
 .pay-container {
-    background-color: #CCCCCC;
+    background-color: $first-color-bg;
+    padding: 20px;
     border-radius: 10px;
-    padding: 10px;
+    h2 {
+        color: $first-color;
+        font-weight: $fw-bold;
+    }
+    p {
+        color: $third-color;
+    }
+    h3 {
+        color: $first-color;
+        font-weight: $fw-bold;
+    }
+    .total {
+        color: $font-white;
+        font-weight: $fw-bold;
+        font-size: 30px;
+    }
 }

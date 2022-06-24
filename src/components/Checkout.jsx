@@ -28,11 +28,12 @@ const Checkout = () => {
                 <button className="mt-3 añadir-carrito" onClick={clear_cart}>VACIAR CARRITO</button>
             </div>
             <div className='col-12 col-md-4'>
-                <div className='pay-container'>
+                <div className='pay-container shadow'>
                     <h2>RESUMEN DE COMPRA</h2>
                     <p>Tienes {cart_widget} {cart_widget === 1 ? 'producto' : 'productos'}</p>
                     <h3>TOTAL</h3>
-                    <p>${total_amount} ARS</p>
+                    <p className='total'>${total_amount} ARS</p>
+                    <button className="mt-3 añadir-carrito" onClick={clear_cart}>INICIAR PAGO</button>
                 </div>
             </div>
         </>
