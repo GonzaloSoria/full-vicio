@@ -6,7 +6,7 @@ const Checkout = () => {
     const {cart, clear_cart, cart_widget, total_amount} = useCartContext();
     return (
         <>
-            <div className="col-12 col-md-8 mt-3">
+            <div className="col-12 col-md-8 mt-5">
                 <h2 className='carrito'>Carrito de compras</h2>
                 <img src="assets/download.png" alt="" />
                 <div className="row mt-5">
