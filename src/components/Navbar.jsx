@@ -15,9 +15,6 @@ const Navbar = () => {
     },{
         name: 'Juegos',
         route: '/productos'
-    },{
-        name: 'Categorias',
-        route: '/categorias'
     }]
 
     return (
@@ -53,12 +50,12 @@ const Navbar = () => {
                             <Link to='/'><h1 className="brand d-none d-md-block">Fullvicio.</h1></Link>
                         </div>
                         <div className="d-flex justifi-content-center">
-                            <form action="" className="d-flex justify-content-center align-items-center search-form">
+                            {/* <form action="" className="d-flex justify-content-center align-items-center search-form">
                                 <input type="search" placeholder="Buscar"/>
                                 <input type="image" src="assets/lupa.png" alt='lupa' className="lupa"/>
-                            </form>
+                            </form> */}
                             <div className="bg-juegos mx-2">
-                                <Link to='/productos' className="juegos">Juegos</Link>
+                                <Link to='/productos' className="juegos">Todos los Juegos</Link>
                             </div>
                             <FavWidget />
                             <CartWidget />
