@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import CartWidget from "./CartWidget";
 import FavWidget from "./FavWidget";
+import UserWidget from './UserWidget';
 
 const Navbar = () => {
     const links = [{
@@ -55,10 +56,11 @@ const Navbar = () => {
                                 <input type="image" src="assets/lupa.png" alt='lupa' className="lupa"/>
                             </form> */}
                             <div className="bg-juegos mx-2">
-                                <Link to='/productos' className="juegos">Todos los Juegos</Link>
+                                <Link to='/productos' className="juegos">Juegos</Link>
                             </div>
                             <FavWidget />
                             <CartWidget />
+                            <UserWidget />
                         </div>
                     </nav>
                 </div>

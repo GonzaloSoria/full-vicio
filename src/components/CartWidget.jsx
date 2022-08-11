@@ -6,7 +6,7 @@ const CartWidget = () => {
 
     return (
         <>
-            <div className="bg-cart">
+            <div className="bg-cart ms-2">
                 <Link to='/carrito'><img src="assets/cart.png" alt="" /></Link>
                 <div className="widget d-flex justify-content-center align-items-center">{cart_widget}</div>
             </div>
