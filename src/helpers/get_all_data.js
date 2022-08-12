@@ -1,14 +1,18 @@
+import { collection, getDocs, getFirestore } from "firebase/firestore";
+
 export const get_all_data = async (setProducts, category) => {
-    const data = await fetch('../../database/DATABASE.json');
-    const data_parsed = await data.json();
-    try {
-      if(category === undefined) {
-        setProducts(data_parsed);
-      } else {
-        const data_category = data_parsed.filter(game => game.category === category);
-        setProducts(data_category);
-      };
-    } catch (error) {
-      console.log(error);
+  const db = getFirestore();
+  const querie_collection = collection(db, 'products');
+  try {
+    const docs = await getDocs(querie_collection);
+    const products = docs.docs.map(product => ({ id: product.id, ...product.data()}));
+    if(category === undefined) {
+      setProducts(products);
+    } else {
+      const products_category = products.filter(game => game.category === category);
+      setProducts(products_category);
     };
+  } catch (error) {
+      console.log(error);
+  }
 };
