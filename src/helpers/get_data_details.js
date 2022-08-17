@@ -1,18 +1,13 @@
-// export const get_data_details = async (setProduct, id) => {
-//     const data = await fetch('../../database/DATABASE.json');
-//     const data_parsed = await data.json();
-//     try {
-//       const data_found = data_parsed.find(game => game.id === id);
-//       setProduct(data_found);
-//     } catch (error) {
-//       console.log(error);
-//     }
-// }
+import { doc, getDoc, getFirestore } from "firebase/firestore";
 
-import { doc, getFirestore } from "firebase/firestore";
-
-
-export const get_data_details = async () => {
-  const db = getFirestore();
-  const querie_item = doc(db, '')
+export const get_data_details = async (setProduct, id) => {
+  try {
+    const db = getFirestore();
+    const query_item = doc(db, 'products', id);
+    await getDoc(query_item)
+    .then(resp => setProduct({ id: resp.id, ...resp.data()}))
+  } catch (error) {
+    console.log(error);
+  }
 };
+
