@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import CartWidget from "./CartWidget";
 import FavWidget from "./FavWidget";
-import UserWidget from './UserWidget';
 
 const Navbar = () => {
     const links = [{
@@ -54,7 +53,6 @@ const Navbar = () => {
                             <div className="bg-juegos mx-2">
                                 <Link to='/productos' className="juegos">Juegos</Link>
                             </div>
-                            <UserWidget />
                             <FavWidget />
                             <CartWidget />
                         </div>
