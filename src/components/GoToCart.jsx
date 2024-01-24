@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const GoToCart = () => {
   return (
     <>
-        <Link to='/carrito' className='go-to-cart'>IR AL CARRITO</Link>
+        <Link to='/cart' className='go-to-cart'>IR AL CARRITO</Link>
     </>
   )
 }

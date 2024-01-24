@@ -14,10 +14,10 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/productos' element={<Products />} />
-        <Route path='/categoria/:category' element={<Products />} />
-        <Route path='/detalle/:id' element={<Details />} /> 
-        <Route path='/carrito' element={<Cart />} />
+        <Route path='/products' element={<Products />} />
+        <Route path='/category/:category' element={<Products />} />
+        <Route path='/details/:id' element={<Details />} /> 
+        <Route path='/cart' element={<Cart />} />
       </Routes>
       <Footer />
     </CartContextProvider>

@@ -8,13 +8,13 @@ const Navbar = () => {
         route: '/'
     },{
         name: 'Carrito',
-        route: '/carrito'
+        route: '/cart'
     },{
         name: 'Favoritos',
         route: '/favoritos'
     },{
         name: 'Juegos',
-        route: '/productos'
+        route: '/products'
     }]
 
     return (
